@@ -1,0 +1,957 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>详情页</title>
+<link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
+<link rel="stylesheet" href="../css/bootstrap-theme.css" type="text/css">
+<link rel="stylesheet" href="../css/no-responsive.css" type="text/css">
+<link rel="stylesheet" href="../css/index.css" type="text/css">
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/index.js"></script>
+<script src="../js/scroll.js"></script>
+<script src="../js/jquery.imagezoom.min.js"></script>
+
+<link href="../css/base.css" rel="stylesheet" type="text/css" />
+<script src="../js/jquery.jqzoom.js" type="text/javascript" ></script>
+<script src="../js/base.js" type="text/javascript"></script>
+
+<style>
+	.details-con {
+		padding: 25px 20px 0;
+	}
+	.details-con p {
+		text-indent: 2em;
+	}
+</style>
+
+</head>
+
+<body>
+
+<div class="topNav">
+	<div class="container">
+    	<div class="row">
+        	<img src="../images/text.png" class="img-responsive">
+        </div>
+    </div>
+</div>
+<div class="topBar">
+	<div class="container">
+   		<ul class="nav navbar-nav navbar-right">
+            <li class="current"><a href="loginPage.html">你好，请登录</a></li>
+            <li><a href="registered.html">免费注册</a></li>
+            <li><a href="">注销</a></li>
+            <li><a href="myOrder.html" target="_blank">我的订单</a></li>
+            <li><a href="shangJiaRuZhu.html">卖家中心</a></li>
+            <li class="service">
+            	<a>客户服务<div class="icon"><i>◇</i></div></a>
+                <div class="itemBox">
+                	<ul class="item">
+                        <li><a href="helpMianFeiZhuCe.html" target="_blank">免费注册</a></li>
+                        <li><a href="helpGouWuLiuCheng.html" target="_blank">购物流程</a></li>
+                        <li><a href="helpZhaoHuiMiMa.html" target="_blank">找回密码</a></li>
+                        <li><a href="helpZhiFuFangShi.html" target="_blank">支付方式</a></li>
+                		<li><a href="helpZhiFuLiuCheng.html" target="_blank">支付流程</a></li>
+                        <li><a href="helpKuaiDiYunShu.html" target="_blank">快递运输</a></li>
+                		<li><a href="helpYanHuoJuShou.html" target="_blank">验货与拒收政策</a></li>
+                        <li><a href="helpFanXiuTuiHuan.html" target="_blank">返修退换货</a></li>
+                        <li><a href="helpQuXiaoDingDan.html" target="_blank">取消订单</a></li>
+                        <li><a href="helpLianXiWoMen.html" target="_blank">联系我们</a></li>
+                        <div class="clearfix"></div>
+                    </ul>	
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="logoBox">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-md-3 col-lg-3 col-xs-3 logo"><a href="index.html"><img src="../images/LOGO.png" class="img-responsive"></a></div>
+        	<div class="col-md-1 col-lg-1 col-xs-1 guNiang"><img src="../images/guNiang.png" class="img-responsive"></div>
+        	<div class="col-md-6 col-lg-6 col-xs-6 search">
+            	<form action="" class="navbar-form navbar-left">
+                    <div class="input-group">
+                    	<i class="glyphicon glyphicon-search searchIcon"></i>
+                        <input type="text" placeholder="搜索关键词" class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default but">搜索</button>
+                        </span>
+                    </div>
+                </form>
+                <ul class="nav navbar-nav navbar-left searchNav">
+                    <li><a href="">海关拍卖</a></li>
+                	<li><a href="">大闸蟹</a></li>
+                	<li><a href="">2件199</a></li>
+                	<li><a href="">团购9.9</a></li>
+                </ul>
+			</div>
+        	<div class="col-md-2 col-lg-2 col-xs-2 qrCod"><label>名优特产<br>想吃就买</label><img src="../images/qrCod.png"></div>
+        </div>
+    </div>
+</div>
+<div class="navItemsBox">
+	<div class="container">
+        <ul class="navItems">
+            <li class="active">
+            	<h1>全部商品分类</h1>
+            	<ul class="allClassify">
+            		<li class="mainNav">
+                    	<h1>全部商品</h1>
+                        <div class="dumascroll pop">
+                        	<h2 class=""><a href="">全部商品标题</a></h2>
+                            <ul class="">
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <h2><a href="">全部商品标题</a></h2>
+                            <ul>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                    </li>
+            		<li class="mainNav">
+                    	<h1>名优推荐</h1>
+                        <div class="dumascroll pop">
+                        	<h2><a href="">名优推荐标题</a></h2>
+                            <ul>
+                                <li><a href="">名优推荐</a></li>
+                                <li><a href="">名优推荐</a></li>
+                                <li><a href="">名优推荐</a></li>
+                                <li><a href="">名优推荐</a></li>
+                                <li><a href="">名优推荐</a></li>
+                                <li><a href="">名优推荐</a></li>
+                                <li><a href="">名优推荐</a></li>
+                                <li><a href="">名优推荐</a></li>
+                                <li><a href="">名优推荐</a></li>
+                                <li><a href="">名优推荐</a></li>
+                                <li><a href="">名优推荐</a></li>
+                                <li><a href="">名优推荐</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <h2><a href="">名优推荐标题</a></h2>
+                            <ul>
+                                <li><a href="">名优推荐</a></li>
+                                <li><a href="">名优推荐</a></li>
+                                <li><a href="">名优推荐</a></li>
+                                <li><a href="">名优推荐</a></li>
+                                <li><a href="">名优推荐</a></li>
+                                <li><a href="">名优推荐</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                    </li>
+            		<li class="mainNav">
+                    	<h1>新鲜水果</h1>
+                        <div class="dumascroll pop">
+                        	<h2><a href="">新鲜水果标题</a></h2>
+                            <ul>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <h2><a href="">新鲜水果标题</a></h2>
+                            <ul>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                    </li>
+            		<li class="mainNav">
+                    	<h1>零食小吃</h1>
+                        <div class="dumascroll pop">
+                        	<h2><a href="">零食小吃标题</a></h2>
+                            <ul>
+                                <li><a href="">零食小吃</a></li>
+                                <li><a href="">零食小吃</a></li>
+                                <li><a href="">零食小吃</a></li>
+                                <li><a href="">零食小吃</a></li>
+                                <li><a href="">零食小吃</a></li>
+                                <li><a href="">零食小吃</a></li>
+                                <li><a href="">零食小吃</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <h2><a href="">零食小吃标题</a></h2>
+                            <ul>
+                                <li><a href="">零食小吃</a></li>
+                                <li><a href="">零食小吃</a></li>
+                                <li><a href="">零食小吃</a></li>
+                                <li><a href="">零食小吃</a></li>
+                                <li><a href="">零食小吃</a></li>
+                                <li><a href="">零食小吃</a></li>
+                                <li><a href="">零食小吃</a></li>
+                                <li><a href="">零食小吃</a></li>
+                                <li><a href="">零食小吃</a></li>
+                                <li><a href="">零食小吃</a></li>
+                                <li><a href="">零食小吃</a></li>
+                                <li><a href="">零食小吃</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                    </a></li>
+            		<li class="mainNav">
+                    	<h1>名茶名饮</h1>
+                        <div class="dumascroll pop">
+                        	<h2><a href="">名茶名饮标题</a></h2>
+                            <ul>
+                                <li><a href="">名茶名饮</a></li>
+                                <li><a href="">名茶名饮</a></li>
+                                <li><a href="">名茶名饮</a></li>
+                                <li><a href="">名茶名饮</a></li>
+                                <li><a href="">名茶名饮</a></li>
+                                <li><a href="">名茶名饮</a></li>
+                                <li><a href="">名茶名饮</a></li>
+                                <li><a href="">名茶名饮</a></li>
+                                <li><a href="">名茶名饮</a></li>
+                                <li><a href="">名茶名饮</a></li>
+                                <li><a href="">名茶名饮</a></li>
+                                <li><a href="">名茶名饮</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <h2><a href="">名茶名饮标题</a></h2>
+                            <ul>
+                                <li><a href="">名茶名饮</a></li>
+                                <li><a href="">名茶名饮</a></li>
+                                <li><a href="">名茶名饮</a></li>
+                                <li><a href="">名茶名饮</a></li>
+                                <li><a href="">名茶名饮</a></li>
+                                <li><a href="">名茶名饮</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                    </li>
+            		<li class="mainNav">
+                    	<h1>干货调料</h1>
+                        <div class="dumascroll pop">
+                        	<h2><a href="">干货调料标题</a></h2>
+                            <ul>
+                                <li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <h2><a href="">干货调料标题</a></h2>
+                            <ul>
+                                <li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="dumascroll pop">
+                        	<h2><a href="">干货调料标题</a></h2>
+                            <ul>
+                                <li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <h2><a href="">标题分类标题分类标题分类</a></h2>
+                            <ul>
+                            	<li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                    </li>
+            		<li class="mainNav">
+                    	<h1>工艺品类</h1>
+                        <div class="dumascroll pop">
+                        	<h2><a href="">工艺品类标题</a></h2>
+                            <ul>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <h2><a href="">工艺品类标题</a></h2>
+                            <ul>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <h2><a href="">工艺品类标题</a></h2>
+                            <ul>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                        	<h2><a href="">工艺品类标题</a></h2>
+                            <ul>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <h2><a href="">工艺品类标题</a></h2>
+                            <ul>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                    </li>
+            		<li class="mainNav">
+                    	<h1>农产生鲜</h1>
+                        <div class="dumascroll pop">
+                        	<h2><a href="">标题分类</a></h2>
+                            <ul>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <h2><a href="">标题分类标题分类标题分类</a></h2>
+                            <ul>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                    </li>
+            	</ul>
+            </li>
+            <li><a href="index.html"><h1>首页</h1></a></li>
+           	<li><a href="highGoodsArea.html"><h1>渔牧精品区</h1></a></li>
+            <div class="clearfix"></div>
+        </ul>
+    </div>
+</div>
+
+<div class="container">
+	<div class="detailsBox">
+    	
+        <div class="right-extra" style=" width:360px; height:440px; float:left; overflow:hidden;">
+          <!--产品参数开始-->
+			<div>
+                <div id="preview" class="spec-preview">
+                    <span class="jqzoom">
+                        <img jqimg="../images/pro01.png" src="../images/pro01.png" />
+                    </span>
+                 </div>
+            	<!--缩图开始-->
+                <div class="spec-scroll">
+                    <a class="prev">&lt;</a>
+                    <a class="next">&gt;</a>
+                    <div class="items">
+                      <ul>
+                          <li><img bimg="../images/pro01.png" src="../images/pro01.png" onmousemove="preview(this);"></li>
+                          <li><img bimg="../images/pro02.png" src="../images/pro02.png" onmousemove="preview(this);"></li>
+                          <li><img bimg="../images/pro03.png" src="../images/pro03.png" onmousemove="preview(this);"></li>
+                          <li><img bimg="../images/pro04.png" src="../images/pro04.png" onmousemove="preview(this);"></li>
+                          <li><img bimg="../images/pro05.png" src="../images/pro05.png" onmousemove="preview(this);"></li>
+                          <li><img bimg="../images/pro01.png" src="../images/pro01.png" onmousemove="preview(this);"></li>
+                          <li><img bimg="../images/pro02.png" src="../images/pro02.png" onmousemove="preview(this);"></li>
+                          <li><img bimg="../images/pro03.png" src="../images/pro03.png" onmousemove="preview(this);"></li>
+                          <li><img bimg="../images/pro04.png" src="../images/pro04.png" onmousemove="preview(this);"></li>
+                          <li><img bimg="../images/pro05.png" src="../images/pro05.png" onmousemove="preview(this);"></li>
+                          <li><img bimg="../images/pro01.png" src="../images/pro01.png" onmousemove="preview(this);"></li>
+                          <li><img bimg="../images/pro02.png" src="../images/pro02.png" onmousemove="preview(this);"></li>
+                          <li><img bimg="../images/pro03.png" src="../images/pro03.png" onmousemove="preview(this);"></li>
+                          <li><img bimg="../images/pro04.png" src="../images/pro04.png" onmousemove="preview(this);"></li>
+                          <li><img bimg="../images/pro05.png" src="../images/pro05.png" onmousemove="preview(this);"></li>
+                          <li><img bimg="../images/pro01.png" src="../images/pro01.png" onmousemove="preview(this);"></li>
+                          <li><img bimg="../images/pro02.png" src="../images/pro02.png" onmousemove="preview(this);"></li>
+                          <li><img bimg="../images/pro03.png" src="../images/pro03.png" onmousemove="preview(this);"></li>
+                          <li><img bimg="../images/pro04.png" src="../images/pro04.png" onmousemove="preview(this);"></li>
+                          <li><img bimg="../images/pro05.png" src="../images/pro05.png" onmousemove="preview(this);"></li>
+                          <div class="clearfix"></div>
+                      </ul>
+                    </div>
+                </div>
+                <!--缩图结束-->
+			</div>
+        </div>
+    	<script>
+        	var ulLeng = $(".items li").length*66;
+			$(".items > ul").width($(this).length*ulLeng);
+        </script>
+    	
+        
+        <div class="proBox">
+        	<h1>新鲜海南蜜瓜 肉质细嫩多汁 清甜可口 香味浓郁 6元/斤</h1>
+            <ul class="priceBox">
+            	<li>
+                	<span class="title">商 城 价 :</span>
+                    <span class="price">￥6.00</span>
+                    <span class="buyPrice">抢购价</span>
+                </li>
+            	<li>
+                	<span class="title">市 场 价 :</span>
+                    <span class="marketPrice">￥8.00</span>
+                </li>
+            </ul>
+            <ul class="numberBox">
+                <li>
+                    <label>选择规格：</label>
+                    <div class="item current">规格1</div>
+                  	<div class="item">规格2</div>
+                    <div class="item">规格3</div>
+                    <div class="item">规格4</div>
+                    <div class="clearfix"></div>
+                </li>
+            	<li>
+                    <label>选择数量：</label>
+                    <input type="button" value="-" class="button btn_reduce">
+                    <input type="text" value="1" class="text">
+                    <input type="button" value="+" class="button btn_add">
+                    <div class="clearfix"></div>
+                </li>
+                <div class="clearfix"></div>
+            </ul>
+            <script>
+				$(".numberBox li div").click(function(){
+					$(this).addClass("current").siblings().removeClass("current");
+				})
+            	/*产品数量*/
+				var x=$(".numberBox .text").text();
+				var x=1;
+				$(".btn_add").click(function(){
+					x++;
+					$(".numberBox .text").val(x);
+				})
+				$(".btn_reduce").css({"marginLeft":"10px"}); 
+				$(".btn_reduce").click(function(){
+					if(x>1){
+						x--;	
+						$(".numberBox .text").val(x);
+					}
+				})
+            </script>
+            <ul class="butBox">
+            	<li><a href=""><input type="button" value="立即购买" class="buy"></a></li>
+            	<li><a href=""><input type="button" value="加入购物车" class="join"></a></li>
+                <div class="clearfix"></div>
+            </ul>
+            <h2>温馨提示：• 支持7天无理由退货</h2>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    
+	<div class="detailsProBox">
+    	<div class="row SellHotPro">
+        	<ul class="classifyBox">	<!-- 相关分类根据主导航的全部商品分类内容放置 -->
+            	<h1 class="col-sm-12 col-xs-12">相关分类</h1>
+        		<li class="col-sm-6 col-xs-6"><a href="">全部商品</a></li>
+                <li class="col-sm-6 col-xs-6"><a href="">名优推荐</a></li>
+                <li class="col-sm-6 col-xs-6"><a href="">新鲜水果</a></li>
+                <li class="col-sm-6 col-xs-6"><a href="">零食小吃</a></li>
+                <li class="col-sm-6 col-xs-6"><a href="">名茶名饮</a></li>
+                <li class="col-sm-6 col-xs-6"><a href="">干货调料</a></li>
+                <li class="col-sm-6 col-xs-6"><a href="">工艺品类</a></li>
+                <li class="col-sm-6 col-xs-6"><a href="">农产生鲜</a></li>
+                <div class="clearfix"></div>
+        	</ul>
+            <div class="col-sm-2 col-lg-2 col-xs-2 selectedPro">
+            	<div class="selected">		<!-- 热销产品限制数量为7件 -->
+                    <div class="title">
+                        <h1>热销商品</h1>
+                        <h2>广告</h2>
+                        <div class="clearfix"></div>
+                    </div>
+                    <ul class="col-sm-12 col-xs-12">
+                        <li><a href=""><img src="../images/product01.png"></a></li>
+                        <li class="namePro"><a href="">智利进口蓝莓细致圆熟智利进口蓝莓细致圆熟智利进口蓝莓细致圆熟</a></li>
+                        <li class="price"><a href="">￥13.80</a><span>热销3280件</span></li>
+                    </ul> 
+                    <ul class="col-sm-12 col-xs-12">
+                        <li><a href=""><img src="../images/product02.png"></a></li>
+                        <li class="namePro"><a href="">智利进口蓝莓细致圆熟智利进口蓝莓细致圆熟智利进口蓝莓细致圆熟</a></li>
+                        <li class="price"><a href="">￥13.80</a><span>热销3280件</span></li>
+                    </ul>
+                    <ul class="col-sm-12 col-xs-12">
+                        <li><a href=""><img src="../images/product03.png"></a></li>
+                        <li class="namePro"><a href="">智利进口蓝莓细致圆熟智利进口蓝莓细致圆熟智利进口蓝莓细致圆熟</li>
+                        <li class="price"><a href="">￥13.80</a><span>热销3280件</span></li>
+                    </ul>
+                    <ul class="col-sm-12 col-xs-12">
+                        <li><a href=""><img src="../images/product04.png"></a></li>
+                        <li class="namePro"><a href="">智利进口蓝莓细致圆熟智利进口蓝莓细致圆熟智利进口蓝莓细致圆熟</li>
+                        <li class="price"><a href="">￥13.80</a><span>热销3280件</span></li>
+                    </ul>
+                    <ul class="col-sm-12 col-xs-12">
+                        <li><a href=""><img src="../images/product05.png"></a></li>
+                        <li class="namePro"><a href="">智利进口蓝莓细致圆熟智利进口蓝莓细致圆熟智利进口蓝莓细致圆熟</li>
+                        <li class="price"><a href="">￥13.80</a><span>热销3280件</span></li>
+                    </ul>
+                    <ul class="col-sm-12 col-xs-12">
+                        <li><a href=""><img src="../images/product01.png"></a></li>
+                        <li class="namePro"><a href="">智利进口蓝莓细致圆熟智利进口蓝莓细致圆熟智利进口蓝莓细致圆熟</li>
+                        <li class="price"><a href="">￥13.80</a><span>热销3280件</span></li>
+                    </ul> 
+                    <ul class="col-sm-12 col-xs-12">
+                        <li><a href=""><img src="../images/product02.png"></a></li>
+                        <li class="namePro"><a href="">智利进口蓝莓细致圆熟智利进口蓝莓细致圆熟智利进口蓝莓细致圆熟</li>
+                        <li class="price"><a href="">￥13.80</a><span>热销3280件</span></li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="detailsPro">
+        	<div class="title">
+            	<h1>商品详情</h1>
+                <div class="clearfix"></div>
+            </div>
+            <!--<ul class="row parameter">
+                <li class="col-sm-3 col-xs-3">品牌：水果</li>
+                <li class="col-sm-3 col-xs-3">规格：1*1只</li>
+                <li class="col-sm-3 col-xs-3">产地：中国海南</li>
+                <li class="col-sm-3 col-xs-3">商品毛重：1500.0克</li>
+                <li class="col-sm-3 col-xs-3">品牌：水果</li>
+                <li class="col-sm-3 col-xs-3">规格：1*1只</li>
+                <li class="col-sm-3 col-xs-3">产地：中国海南</li>
+                <li class="col-sm-3 col-xs-3">商品毛重：1500.0克</li>
+                <li class="col-sm-3 col-xs-3">品牌：水果</li>
+                <li class="col-sm-3 col-xs-3">规格：1*1只</li>
+                <li class="col-sm-3 col-xs-3">产地：中国海南</li>
+                <li class="col-sm-3 col-xs-3">商品毛重：1500.0克</li>
+                <li class="col-sm-3 col-xs-3">品牌：水果</li>
+                <li class="col-sm-3 col-xs-3">规格：1*1只</li>
+                <li class="col-sm-3 col-xs-3">产地：中国海南</li>
+                <li class="col-sm-3 col-xs-3">商品毛重：1500.0克</li>
+                <div class="clearfix"></div>
+            </ul>-->
+           
+           <div class="details-con">
+           	<p style=" font-size: 14px; line-height: 24px;"><span style="color: rgb(204, 0, 0); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">牛肉丸</span><span style="color: rgb(51, 51, 51); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">又称手捶</span><span style="color: rgb(204, 0, 0); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">牛肉丸</span><span style="color: rgb(51, 51, 51); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">，是广东省汕头市有名的传统小吃之一，起源于潮菜。</span><span style="color: rgb(204, 0, 0); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">牛肉丸</span><span style="color: rgb(51, 51, 51); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">作为汕头市乃至整个广东潮汕地区最知名、最大众化的特色传统小吃，其既可作点心，又可作为一道筵席汤菜。</span><span style="color: rgb(204, 0, 0); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">牛肉丸</span><span style="color: rgb(51, 51, 51); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">制作细致，色泽红润，柔脆有弹性，鲜美馨香</span><span style="color: rgb(204, 0, 0); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">牛肉丸</span><span style="color: rgb(51, 51, 51); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">又称手捶</span><span style="color: rgb(204, 0, 0); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">牛肉丸</span><span style="color: rgb(51, 51, 51); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">，是广东省汕头市有名的传统小吃之一，起源于潮菜。</span><span style="color: rgb(204, 0, 0); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">牛肉丸</span><span style="color: rgb(51, 51, 51); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">作为汕头市乃至整个广东潮汕地区最知名、最大众化的特色传统小吃，其既可作点心，又可作为一道筵席汤菜。</span><span style="color: rgb(204, 0, 0); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">牛肉丸</span><span style="color: rgb(51, 51, 51); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">制作细致，色泽红润，柔脆有弹性，鲜美馨香</span><span style="color: rgb(204, 0, 0); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">牛肉丸</span><span style="color: rgb(51, 51, 51); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">又称手捶</span><span style="color: rgb(204, 0, 0); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">牛肉丸</span><span style="color: rgb(51, 51, 51); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">，是广东省汕头市有名的传统小吃之一，起源于潮菜。</span><span style="color: rgb(204, 0, 0); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">牛肉丸</span><span style="color: rgb(51, 51, 51); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">作为汕头市乃至整个广东潮汕地区最知名、最大众化的特色传统小吃，其既可作点心，又可作为一道筵席汤菜。</span><span style="color: rgb(204, 0, 0); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">牛肉丸</span><span style="color: rgb(51, 51, 51); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">制作细致，色泽红润，柔脆有弹性，鲜美馨香</span></p>
+           		<p style=" font-size: 16px; line-height: 24px;"><span style="color: rgb(204, 0, 0); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">牛肉丸</span><span style="color: rgb(51, 51, 51); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">又称手捶</span><span style="color: rgb(204, 0, 0); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">牛肉丸</span><span style="color: rgb(51, 51, 51); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">，是广东省汕头市有名的传统小吃之一，起源于潮菜。</span><span style="color: rgb(204, 0, 0); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">牛肉丸</span><span style="color: rgb(51, 51, 51); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">作为汕头市乃至整个广东潮汕地区最知名、最大众化的特色传统小吃，其既可作点心，又可作为一道筵席汤菜。</span><span style="color: rgb(204, 0, 0); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">牛肉丸</span><span style="color: rgb(51, 51, 51); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">制作细致，色泽红润，柔脆有弹性，鲜美馨香</span><span style="color: rgb(204, 0, 0); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">牛肉丸</span><span style="color: rgb(51, 51, 51); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">又称手捶</span><span style="color: rgb(204, 0, 0); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">牛肉丸</span><span style="color: rgb(51, 51, 51); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">，是广东省汕头市有名的传统小吃之一，起源于潮菜。</span><span style="color: rgb(204, 0, 0); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">牛肉丸</span><span style="color: rgb(51, 51, 51); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">作为汕头市乃至整个广东潮汕地区最知名、最大众化的特色传统小吃，其既可作点心，又可作为一道筵席汤菜。</span><span style="color: rgb(204, 0, 0); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">牛肉丸</span><span style="color: rgb(51, 51, 51); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">制作细致，色泽红润，柔脆有弹性，鲜美馨香</span><span style="color: rgb(204, 0, 0); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">牛肉丸</span><span style="color: rgb(51, 51, 51); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">又称手捶</span><span style="color: rgb(204, 0, 0); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">牛肉丸</span><span style="color: rgb(51, 51, 51); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">，是广东省汕头市有名的传统小吃之一，起源于潮菜。</span><span style="color: rgb(204, 0, 0); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">牛肉丸</span><span style="color: rgb(51, 51, 51); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">作为汕头市乃至整个广东潮汕地区最知名、最大众化的特色传统小吃，其既可作点心，又可作为一道筵席汤菜。</span><span style="color: rgb(204, 0, 0); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">牛肉丸</span><span style="color: rgb(51, 51, 51); font-family: arial; font-size: 13px; background-color: rgb(255, 255, 255);">制作细致，色泽红润，柔脆有弹性，鲜美馨香</span></p>
+			</div>
+			
+        	<div class="img">
+            	<img src="../images/pro06.png">
+            </div>
+            <div class="classify title">	<!-- 商品评价限制为五位用户评价 -->
+            	<h1>商品评价</h1>
+                <ul>
+                	<li class="current">全部（300+）</li>
+                	<li>好评（170）</li>
+                	<li>中评（120）</li>
+                	<li>差评（30）</li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+            
+            <div class="evaluationBox">
+            	<div class="listBox">
+                	<div class="user">
+                    	<img src="../images/user.png">
+                        <h1>187******44（匿名）</h1>
+                    </div>
+                    <div class="content">
+                    	<ul>
+                            <li><img src="../images/score.png"></li>
+                            <li class="current">瓜很甜，又很新鲜，所以继续又买了3只，每个都是独立包装，贴心服务，以后会继续购买。</li>
+                        </ul>
+                        <h2>2016-12-17 15:58</h2>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            	<div class="listBox">
+                	<div class="user">
+                    	<img src="../images/user.png">
+                        <h1>187******44（匿名）</h1>
+                    </div>
+                    <div class="content">
+                    	<ul>
+                            <li><img src="../images/score.png"></li>
+                            <li class="current">瓜很甜，又很新鲜，所以继续又买了3只，每个都是独立包装，贴心服务，以后会继续购买。</li>
+                        </ul>
+                        <h2>2016-12-17 15:58</h2>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="listBox">
+                	<div class="user">
+                    	<img src="../images/user.png">
+                        <h1>187******44（匿名）</h1>
+                    </div>
+                    <div class="content">
+                    	<ul>
+                            <li><img src="../images/score.png"></li>
+                            <li class="current">瓜很甜，又很新鲜，所以继续又买了3只，每个都是独立包装，贴心服务，以后会继续购买。</li>
+                        </ul>
+                        <h2>2016-12-17 15:58</h2>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="listBox">
+                	<div class="user">
+                    	<img src="../images/user.png">
+                        <h1>187******44（匿名）</h1>
+                    </div>
+                    <div class="content">
+                    	<ul>
+                            <li><img src="../images/score.png"></li>
+                            <li class="current">瓜很甜，又很新鲜，所以继续又买了3只，每个都是独立包装，贴心服务，以后会继续购买。</li>
+                        </ul>
+                        <h2>2016-12-17 15:58</h2>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="listBox">
+                	<div class="user">
+                    	<img src="../images/user.png">
+                        <h1>187******44（匿名）</h1>
+                    </div>
+                    <div class="content">
+                    	<ul>
+                            <li><img src="../images/score.png"></li>
+                            <li class="current">瓜很甜，又很新鲜，所以继续又买了3只，每个都是独立包装，贴心服务，以后会继续购买。</li>
+                        </ul>
+                        <h2>2016-12-17 15:58</h2>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                
+            	<div class="paging">
+                    <div style="width:580px; margin:0 auto; padding:40px 0;">
+                        <table border="0" cellpadding="0" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <td class="paginator" valign="bottom" nowrap="true" style="width:40%; float:left; margin-top:5px;">共有1条&nbsp;&nbsp;&nbsp; 页次：1/1 &nbsp;&nbsp;&nbsp;每页9条</td>
+                                    <td class="paginator" valign="bottom" nowrap="true" style="width:58%; float:right;">
+                                        <a disabled="disabled" style="margin-right:5px;">首页</a>
+                                        <a disabled="disabled" style="margin-right:5px;">上一页</a>
+                                        <span class="cpb" style="margin-right:5px;">1</span>
+                                        <a disabled="disabled" style="margin-right:5px;">下一页</a>
+                                        <a disabled="disabled" style="margin-right:5px;">尾页</a>&nbsp;&nbsp;
+                                        <input type="text" value="1" disabled="disabled" name="AspNetPager1_input" id="AspNetPager1_input" style="padding:0px 10px; width:12%; text-align:center;" onkeydown="ANP_keydown(event,'AspNetPager1_btn');" style="width:30px;">
+                                        <input type="submit" value="跳转" name="AspNetPager1" id="AspNetPager1_btn" disabled="disabled" style=" padding:3px 10px;" onclick="if(ANP_checkInput('AspNetPager1_input',1)){__doPostBack('AspNetPager1','')} else{return false}">
+                                    </td>
+                                    <div class="clearfix"></div>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+				</div>
+            
+            </div>
+        </div>
+    	<div class="clearfix"></div> 
+    </div>
+</div>
+
+<div class="fixedRight">
+	<ul>
+		<li><a href="cart.html">
+        	<img src="../images/cart.png">
+            <h1>购物车</h1>
+            <h2>1</h2>
+        </a></li>
+	</ul>
+    <div class="icon QrCode">
+    	<i class="glyphicon glyphicon-qrcode"></i>
+        <div class="iconCon QrCodeCon">
+        	<img src="../images/qrCod.png">
+            <h1>扫一扫</h1>
+        </div>
+    </div>
+    <div class="icon backToTOP">
+    	<i class="glyphicon glyphicon-menu-up"></i>
+        <div class="iconCon">回到顶部</div>
+    </div>
+    
+</div>
+<script>
+/* 返回顶部 */
+window.onload=function(){
+	$(".backToTOP").click(function(){
+		$("body,html").animate({scrollTop:0},500);
+		return false;
+	})
+}
+</script>
+<div class="footerBox">
+	<div class="container">
+    	<div class="row footer">
+            <div class="col-md-2 col-lg-2 col-xs-2">
+                <ul>
+                    <h1>新手上路</h1>
+                    <li><a href="helpMianFeiZhuCe.html" target="_blank">免费注册</a></li>
+                    <li><a href="helpGouWuLiuCheng.html" target="_blank">购物流程</a></li>
+                    <li><a href="helpZhaoHuiMiMa.html" target="_blank">找回密码</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xs-2">
+                <ul>
+                    <h1>付款方式</h1>
+                    <li><a href="helpZhiFuFangShi.html" target="_blank">支付方式</a></li>
+                	<li><a href="helpZhiFuLiuCheng.html" target="_blank">支付流程</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xs-2">
+                <ul>
+                    <h1>配送信息</h1>
+                    <li><a href="helpKuaiDiYunShu.html" target="_blank">快递运输</a></li>
+                	<li><a href="helpYanHuoJuShou.html" target="_blank">验货与拒收政策</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xs-2">
+                <ul>
+                    <h1>售后服务</h1>
+                    <li><a href="helpFanXiuTuiHuan.html" target="_blank">返修退换货</a></li>
+                    <li><a href="helpQuXiaoDingDan.html" target="_blank">取消订单</a></li>
+                    <li><a href="helpLianXiWoMen.html" target="_blank">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-lg-3 col-xs-3 imgBox">
+            	<div class="img">
+                	<h1>400-123-0771</h1>
+                	<img src="../images/contact.png">
+                </div>
+            </div>
+        </div>
+        <div class="footerLink">
+        </div>
+        <div class="ICP">Copyright©2017 广西第一特产网 All Rights Reserved 广西第一特产网版权所有<br>
+桂ICP备112343423678e号-2 桂公网安备 123456789123456号</div>
+    </div>
+</div> 
+
+</body>
+<script>
+				
+	$(function(){
+		var str = $(".details-con > p").css("fontSize");
+		var num = Number(str.slice(0, str.length - 2));
+		num = 1.8;
+		$(".details-con > p").css("lineHeight",num);
+		$(".details-con > p span").css("lineHeight",num);
+	});
+			
+</script>
+</html>

@@ -1,0 +1,919 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/*css重置*/
+html,*{ font-family:"Microsoft YaHei", Helvetica, Arial, sans-serif, serif; font-size:12px; line-height:12px; font-weight:500; color:#666;}
+body{ margin:0; background-color:#f2f2f2; background:url(../images/bg.png) repeat-y;}
+h1,h2,h3,h4,h5,h6{ margin:0; padding:0; font-size:14px; line-height:14px;}
+ul{ margin:0; padding:0;}
+li{ list-style:none;}
+a{ text-decoration:none; outline:none; color:#666;}
+a:hover{ text-decoration:none; outline:none;}
+input{ margin:0; padding:0; outline:none;}
+p{ margin:0;}
+i{ font-style:normal;}
+.clearfix{ clear:both;}
+img{ display:block;}
+
+
+/* 登录页 */
+.loginPageBox{ margin-bottom:40px;}
+.loginPageBox .loginPage{ background:url(../images/loginbj.png) no-repeat; height:580px;}
+.loginPageBox .loginPage .container{ position:relative;}
+.loginPageBox .loginPage .img{ overflow:hidden; float:left; margin-top:8%; margin-left:8%;}
+.login_table_box{ width:340px; background-color:#fff; float:left; overflow:hidden; position:absolute; right:0; top:18%;}
+.login_title_box{ width:340px; height:60px; border-bottom:1px #e5e5e5 solid;}
+.login_title_box h1{ font-size:20px; line-height:20px; padding-top:20px; padding-left:46px; float:left;}
+.login_title{ float:left; margin-top:20px; margin-left:45px;}
+.login_user_box{ width:300px; height:45px; border:1px #ccc solid; margin-left:20px; margin-top:20px;}
+.login_user{ background-image:url(../images/user_01.png); width:45px; height:43px; float:left; border-right:1px #ccc solid;}
+.login_user_box input{ font-size:18px; line-height:18px; float:left; margin-left:12px; margin-top:10px; border:none; outline:none;}
+
+.login_table_box .field-validation-error span{ background:url(../images/error.png)  no-repeat; background-size:16px; color:red; margin-top:6px; margin-left:76px; padding-left:22px; line-height:16px; display:block;}
+
+.login_password_box{ width:300px; height:45px; border:1px #ccc solid; margin-left:20px; margin-top:20px;}
+.login_password{ background-image:url(../images/password.png); width:45px; height:43px; float:left; border-right:1px #ccc solid;}
+.login_password_box input{ font-size:18px; line-height:18px; float:left; margin-left:12px; margin-top:10px; border:none; outline:none;}
+.login_msg_box{ width:300px; margin-top:20px; margin-left:20px;}
+.login_msg_box input{ float:left; margin-top:-1px; width:15px; height:15px;}
+.login_msg_box h1{ float:left; margin-left:10px;}
+.login_msg_box h2{ float:right;}
+.login_button{ margin-top:20px;}
+.login_button input{ border:none; outline:none; width:300px; margin-left:20px; background-color:#e52e2e; color:#fff; font-size:20px; line-height:40px;}
+.login_button input:hover{ cursor:pointer;}
+.login_register_box{ width:300px; margin-left:20px; margin-top:12px;}
+.login_register_box a{ float:right; padding-bottom:15px;}
+.login_register_box img{ width:18px; height:18px; float:left;}
+.login_register_box h1{ margin-top:2px; margin-left:5px; float:left;}
+
+/* 注册页 */
+.registeredBox{}
+.registeredBox .registered{ z-index:10; position:relative;
+  box-shadow: 0px 5px 8px 0px rgba(102, 102, 102, 0.2);
+  background:white url(../images/tongGu.png) no-repeat 0 2px; height:130px;
+}
+.registeredBox .registered .register_logo{ float:left;}
+.registeredBox .registered .register_logo a{ float:left; margin:30px 0;}
+.registeredBox .registered .register_logo h1{ float:left; font-size:30px; line-height:30px; margin-left:50px; margin-top:13%;}
+.registeredBox .registered .register_title{ float:right; margin-top:4.5%;}
+.registeredBox .registered .register_title li{ float:left; font-size:26px; line-height:26px; margin-left:12px; color:#999;}
+.registeredBox .registered .register_title li a{ font-size:26px; line-height:26px; color:#666;}
+.registeredBox .registered .register_title li a:hover{ color:red;}
+.registeredBox .form{ position:relative; z-index:5; min-height:660px; background-color:#fffafa;}
+.registeredBox .form form{ width:480px; margin:0 auto; padding:40px 0;}
+.registeredBox .form form .input{ border:1px #ccc solid; margin-top:20px; background-color:white; position:relative;}
+.registeredBox .form form .input label{ width:18%; margin:0; margin-left:5%; font-weight:normal; font-size:16px; line-height:60px;}
+.registeredBox .form form .input input{ border:none; width:75%; font-size:16px; line-height:60px; padding:0 8px;}
+.registeredBox .form form .input button{ background-color:#f2f2f2; border:none; outline:none; font-size:16px; line-height:46px; padding:0 20px; position:absolute; right:7px; top:7px;}
+.registeredBox .form form .prompt{ color:red; line-height:16px; margin-top:12px;}
+.registeredBox .form form .prompt img{ float:left; margin-right:8px; margin-left:15px;}
+.registeredBox .form .checkbox{ margin-top:20px;}
+.registeredBox .form .checkbox input{ margin:0px; margin-left:10px; width:15px; height:15px; outline:none;}
+.registeredBox .form .checkbox label{ font-weight:normal; margin:0; margin-left:10px; margin-top:1px;}
+.registeredBox .form .checkbox span{ color:#2e4de5;}
+.registeredBox .verificationCodeForm > a{ width:480px; display:block; margin:0 auto;}
+.registeredBox .verificationCodeForm .but{ width:480px; background-color:#e71e17; font-size:16px; line-height:40px; border:none; outline:none; color:white;}
+.agreementPopBox{ position:fixed; top:0; left:0; background:rgba(204,204,204,.5); width:100%; height:100%; z-index:18; display:none;}
+.agreementPop{ position:fixed; top:24%; left:50%; width:800px; margin-left:-400px; z-index:20; background-color:white; display:none;}
+.agreementPop .title{ background-color:#e62e2e; padding:0 15px; font-size:16px; line-height:40px; color:white;}
+.agreementPop .title i{ color:white; float:right; line-height:40px; cursor:pointer;}
+.agreementPop .agreement{ padding:10px 20px 20px; width:99%; max-height:405px; overflow:auto; margin-top:1%;}
+.agreementPop .agreement h1{ line-height:16px; font-weight:bolder; margin-top:10px;}
+.agreementPop .agreement p{ line-height:20px; margin-top:5px;}
+.agreementPop .but{ background-color:#e62e2e; width:20%; display:block; margin:20px auto; line-height:40px; color:white; border:none; outline:none;}
+
+/* 输入验证码 */
+.registeredBox .stepsBox{ border-bottom:1px #ccc solid; padding-top:40px; background-color:#fffafa;}
+.registeredBox .stepsBox li{ width:16%; display:inline-block; text-align:center; padding:10px 0;}
+.registeredBox .stepsBox li:nth-child(1){ margin-left:26%;}
+.registeredBox .stepsBox li i{ width:20px; height:20px; line-height:20px; text-align:center; border-radius:50%; color:white; background-color:#ccc; display:inline-block;}
+.registeredBox .stepsBox li span{ font-size:18px; line-height:18px; color:#ccc;}
+.registeredBox .stepsBox li.current{ border-bottom:2px red solid;}
+.registeredBox .stepsBox li.current i{ background-color:red;}
+.registeredBox .stepsBox li.current span{ color:#666;}
+.registeredBox .verificationCodeForm{ min-height:516px; padding-bottom:60px;}
+/* 密码修改成功 */
+.registeredBox .modifySuccessfullyBox{ background-color:#fffafa; padding:50px 40px; min-height:576px;}
+.registeredBox .modifySuccessfullyBox .modifySuccessfully{ background-color:#edfed0; border:1px #ccc solid; padding:40px 0;}
+.registeredBox .modifySuccessfullyBox .modifySuccessfully .img{ float:left; margin-left:30%;}
+.registeredBox .modifySuccessfullyBox .modifySuccessfully ul{ float:left; margin-left:15px;}
+.registeredBox .modifySuccessfullyBox .modifySuccessfully li{ font-size:16px; line-height:24px;}
+.registeredBox .modifySuccessfullyBox .modifySuccessfully li:nth-child(1){ font-size:20px; line-height:30px;}
+.registeredBox .modifySuccessfullyBox .modifySuccessfully li:nth-child(2){ color:#999;}
+.registeredBox .modifySuccessfullyBox .modifySuccessfully li a{ font-size:16px; line-height:16px; color:#0080ff; margin-left:20px;}
+
+/* 商城首页 */
+.topNav{ background:url(../images/navBg.png) no-repeat; position:relative; z-index:10;}
+.topNav .row{ margin:0;}
+.topNav img{ margin: 16px 0 20px; display: block;}
+.topNav .myOrderLogo{ height:100px;}
+.topNav .myOrderLogo img{ margin:0; margin-top:22px;}
+.topNav .myOrderLogo .img-responsive{ width:70%; margin:0; margin-left:10%; margin-top:-8px; display:inline-block;}
+.topNav .myOrderLogo a{ font-size:20px; line-height:100px; color:#666;}
+.topNav .myOrderLogo .col-xs-4{ padding:0; background-color:inherit; border:none;}
+.topNav .myOrderLogo form{ margin-top:32px; margin-left:8%;}
+.topNav .myOrderLogo form .input-group{ position:relative;}
+.topNav .myOrderLogo form .input-group i{ position:absolute; top:0; left:0; z-index:10; font-size:16px; line-height:36px; margin-left:10px; color:#999;}
+.topNav .myOrderLogo form .input-group input{ padding-left:33px; font-size:16px; line-height:36px; height:36px; width:260px; outline:none; box-shadow:none;}
+.topNav .myOrderLogo form .input-group button{ outline:none; font-size:16px; line-height:22px;}
+.topBar{ background-color:#f7f7f7; height:40px;}
+.topBar .navbar-nav > li{ line-height:40px; border:1px #f7f7f7 solid;}
+.topBar .navbar-nav > li.current a{ color:red; border-left:none;}
+.topBar .navbar-nav > li > a{ font-size:14px; padding:0; margin:10px 0; padding:0 15px; border-left:1px #ccc solid;}
+.topBar .navbar-nav > li > a:hover{ color:red; background-color:transparent;}
+
+.topBar .navbar-nav > li.service{ position:relative;}
+.topBar .navbar-nav > li.service:hover{ background-color:white; cursor:pointer; color:red; border-left:1px #ccc solid; border-right:1px #ccc solid; position:relative; height:42px;}
+.topBar .navbar-nav > li.service .icon{ display:inline-block; height:6px; overflow:hidden; position:relative; top:-1px; left:5px;}
+.topBar .navbar-nav > li.service .icon i{ font-size:26px; line-height:12px;}
+.topBar .navbar-nav > li.service:hover > a{ color:red; border:none; margin-left:1px; height:32px; position:relative; z-index:55; background-color:white;}
+.topBar .navbar-nav > li.service:hover .icon i{ position:relative; top:-5px; left:0; color:red;}
+.topBar .navbar-nav > li.service .itemBox{ width:300px; border:1px #ccc solid; background-color:white; position:absolute; top:38px; right:-1px; z-index:50; display:none;}
+.topBar .navbar-nav > li.service ul.item{ padding:10px 15px;}
+.topBar .navbar-nav > li.service ul.item li{ float:left; width:50%; line-height:24px; height:24px; overflow:hidden; padding-right:10px;}
+.topBar .navbar-nav > li.service ul.item li a:hover{ color:red;}
+.topBar .navbar-nav > li.service:hover .itemBox{ display:block;}
+
+/*.logo-Box-Bg { background: url(../images/logo-Box-Bg.png) no-repeat;}*/ 
+.logoBox{ background: white url(../images/tongGu.png) no-repeat 0 10px; height:160px;}
+.logoBox .logo{ margin-top:45px; padding-right:0; width:24%;}
+.logoBox .guNiang{ margin-top:30px; padding-left:0;}
+.logoBox .search{ margin-top:32px; position:relative;}
+.logoBox .search form{ padding-left:0; margin-left:7.5%; width:90%;}
+.logoBox .search .input-group{ width:100%;}
+.logoBox .searchIcon{ position:absolute; top:10px; left:12px; z-index:20; font-size:18px; line-height:18px; color:#b3b3b3;}
+.logoBox .search .input-group-addon:not(:first-child):not(:last-child), .input-group-btn:not(:first-child):not(:last-child), .input-group .form-control:not(:first-child):not(:last-child){ border-top-left-radius:4px; border-bottom-left-radius:4px;}
+.logoBox .search input{ height:40px; border:2px #e71e17 solid; font-size:16px; line-height:40px; padding-left:36px;}
+.logoBox .search .form-control:focus {
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 10px rgba(231, 30, 23, .4);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 10px rgba(231, 30, 23, .4);
+}
+.logoBox .search .but{ width:88%; font-size:18px; line-height:18px; height:40px; background-image:none; background-color:#e71e17; border:none; border-radius:0; border-top-right-radius:4px; border-bottom-right-radius:4px; color:white; outline:none;}
+.logoBox .search .searchNav{ margin-left:7.5%; margin-top:1%;}
+.logoBox .search .searchNav li a{ padding:0 10px; font-size:14px; line-height:14px;}
+.logoBox .search .searchNav li a:hover{ color:red; background-color:transparent;}
+.logoBox .qrCod{ background:url(../images/qrCodBg.png) no-repeat; height:88px; margin-top:38px; padding:0; margin-left:10px;}
+.logoBox .qrCod label{ float:left; font-weight:normal; color:#e71e17; font-size:16px; line-height:18px; margin-top:4%; margin-left:4%;}
+.logoBox .qrCod img{ float:left; margin-top:6px; margin-left:14px;}
+.navItemsBox{background: url(../images/navItems_bg.png) no-repeat; height:40px;}
+.navItemsBox .container{ padding:0 15px;}
+.navItemsBox .navItems > li{ float:left; font-size:18px; line-height:40px; color:white; margin-left:40px;}
+.navItemsBox .navItems > li.active{ margin-left:0; position:relative; z-index:20;}
+.navItemsBox .navItems > li > h1{ font-size:16px; line-height:40px; color:#666; padding:0 52px; position:relative; cursor:pointer;}
+.navItemsBox .navItems > li > a > h1{ font-size:16px; color:#666; line-height:40px;}
+.navItemsBox .navItems li.mainNav{ border-bottom:1px dashed #ccc;}
+.navItemsBox .navItems li.mainNav h1{ font-size:14px; line-height:47px; text-align:center; cursor:pointer;}
+.navItemsBox .navItems li.mainNav h1:hover{ color:red; background-color:white;}
+.navItemsBox .navItems li.mainNav:nth-child(odd){ background-color:#fcfafa;}
+.navItemsBox .navItems li.mainNav:nth-child(even){ background-color:#fcfafa;}
+.navItemsBox .navItems > li > ul{ width:200px; position:absolute; top:40px; left:0; display:none;}
+.navItemsBox .navItems > li.active:hover .allClassify{ display:block;}
+.navItemsBox li.mainNav .pop{
+	overflow:auto;
+	overflow:hidden;
+	width:780px; height:384px;
+	padding:0 20px 5px; 
+	border-right:1px #ccc solid;
+	border-bottom:1px #ccc solid;
+	position:absolute; top:0; right:-780px;
+	background-color:white;
+	display:none;
+}
+.navItemsBox li.mainNav .pop h2{ float:left; margin-right:10px; margin-top:20px; width:18%; line-height:30px; text-align:right;}
+.navItemsBox li.mainNav .pop h2 a{ font-size:14px; line-height:16px; border-bottom:1px dashed #ccc; padding-bottom:5px;}
+.navItemsBox li.mainNav .pop h2 a:hover{ color:red;}
+.navItemsBox li.mainNav .pop ul{ float:left; width:80%; margin-top:20px;}
+.navItemsBox li.mainNav .pop ul li{ float:left; margin:8px 10px; border-left:1px #e5e5e5 solid; padding-left:20px;}
+.navItemsBox li.mainNav .pop ul li a{ font-size:14px; line-height:16px;}
+.navItemsBox li.mainNav .pop ul li a:hover{ color:red;}
+/* 滚动条样式 */
+.dumascroll{ width:100px; height:100px; overflow:scroll; overflow-x:hidden;overflow-y:hidden;}
+.dumascroll_area{ height:100%;overflow:hidden; padding-right:10px;}
+.dumascroll_bar,.dumascroll_handle,.dumascroll_handle_a,.dumascroll_arrow_up,.dumascroll_arrow_up_a,.dumascroll_arrow_down,.dumascroll_arrow_down_a{ background-image:url(../images/un_bg_bar.png);}
+.dumascroll_bar{
+	position:absolute; top:0px; right:4px; z-index:9;
+	width:12px; height:100%;
+	cursor:default;
+	-moz-user-select:none;
+	-khtml-user-select:none;
+	user-select:none;
+	background-repeat:repeat-y;
+	background-position:-42px 0;
+	float:left;
+}
+.dumascroll_arrow_up,.dumascroll_arrow_up_a,.dumascroll_handle,.dumascroll_handle_a,.dumascroll_arrow_down,.dumascroll_arrow_down_a{ position:absolute; left:0;}
+.dumascroll_arrow_up,.dumascroll_arrow_up_a,.dumascroll_arrow_down,.dumascroll_arrow_down_a{ width:100%; height:12px; color:#fff; text-align:center;}
+.dumascroll_arrow_up,.dumascroll_arrow_up_a{ top:0;}
+.dumascroll_arrow_down,.dumascroll_arrow_down_a{ bottom:0; }
+.dumascroll_handle,.dumascroll_handle_a{ width:100%; background-repeat:repeat-y; }
+.dumascroll_arrow_up{ background-position:0 0; display:none;}
+.dumascroll_arrow_up_a{ background-position:-14px 0;}
+.dumascroll_handle{ background-position:3px 0; cursor:pointer;}
+.dumascroll_handle_a{ background-position:3px 0; }
+.dumascroll_arrow_down{ background-position:-70px 0; display:none;}
+.dumascroll_arrow_down_a{ background-position:-84px 0;}
+.navItemsBox .navItems li.mainNav:hover .pop{ display:block;}
+
+/*banner*/
+.bannerBox{ min-width:1000px;}
+.bannerBox .item img{ min-height:384px;}
+.bannerBox .carousel-inner > .item.next.left, .carousel-inner > .item.prev.right, .carousel-inner > .item.active{ margin:0 auto;}
+.bannerBox .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img{ max-width:none;}
+.banner{ position:relative; width:1000px; margin:0 auto;}
+.carousel-control{
+	display:block;
+	width:5%; height:80px;
+	position:absolute; top:-250px; left:14%;
+}
+#carousel-example-generic ol li{ margin-left:8px;}
+#carousel-example-generic .carousel-indicators{ bottom:12px;}
+.carousel-control.left,.carousel-control.right{ background-image:none;}
+.carousel-control.left:hover .glyphicon-chevron-left,.carousel-control.right:hover .glyphicon-chevron-right{ color:red;}
+.carousel-control.right{ right:0%;}
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev,.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next{ margin-left:-14px; margin-top:-14px;}
+.carousel-indicators{ left:56%;}
+.proBox .coreBox{ background-color:#fffafa; padding-top:40px;}
+.proBox .coreBox .title{ padding-left:10px; border-left:4px #e71e17 solid; font-size:16px; line-height:16px;}
+.proBox .coreBox .row{ margin:10px 0 0; border-top:2px #e71e17 solid; overflow:hidden;}
+.proBox .coreBox .core{ padding:0; width:15.667%; margin-top:20px; margin-left:1%; background-color:white; position:relative;}
+.proBox .coreBox .core .img{ padding:10px;}
+.proBox .coreBox .core .img img{ width:100%; height:100%; max-width:158px; max-height:158px;}
+.proBox .coreBox .core h1{ background-color:#ffe6e5; line-height:22px; height:54px; overflow:hidden; padding:10px;}
+.proBox .coreBox .core h1 a{ color:#666;}
+.proBox .coreBox .core h1 a:hover{ color:red;}
+.proBox .coreBox .core ul{ background-color:#ffe6e5; line-height:24px; padding:6px 10px 0;}
+.proBox .coreBox .core ul li{ color:red; font-size:18px; line-height:26px; padding-bottom:15px;}
+.proBox .coreBox .core ul li.left{ float:left;}
+.proBox .coreBox .core ul input{ float:right; color:white; line-height:26px; padding:0 14%; background-color:#e71e17; border:none; border-radius:4px;}
+.proBox .coreBox .core ul li.right{ float:right;}
+.proBox .coreBox .core .coreHover{ position:absolute; top:0px; left:0px; width:100%; height:100%; display:none;}
+.proBox .coreBox .core .coreHover .content{ position:absolute; top:40px; left:0px; z-index:20; width:100%;}
+.proBox .coreBox .core .coreHover .content h2{ color:white; line-height:18px; width:100%; height:36px; overflow:hidden; padding:0 28px; text-align:center; transition:all .5s;}
+.proBox .coreBox .core .coreHover .content input{ color:white; font-size:14px; line-height:26px; padding:0 14px; background-color:#e71e17; border:none; border-radius:4px; margin-left:47px; margin-top:10px;}
+.proBox .coreBox .core .coreHover .bj{ background-color: rgb(51, 46, 46); opacity:.8; width:100%; height:100%; position:absolute; top:0px; left:0; z-index:10;}
+.proBox .coreBox .core:hover .coreHover{ display:block;}
+.proBox .coreBox .core:hover .content h2{ transition:all .8s;}
+.proBox .dailyBox{ background-color:#fffafa; padding-top:40px;}
+.proBox .dailyBox .title{ padding-left:10px; border-left:4px #e71e17 solid; font-size:16px; line-height:16px;}
+.proBox .dailyBox .row{ margin:10px 0 0; border-top:2px #e71e17 solid;}
+.proBox .dailyBox .daily{ padding:0; width:19.2%; margin-top:20px; margin-left:1%; background-color:white; border:1px #fffafa solid;}
+.proBox .dailyBox .current{ margin-left:0;}
+.proBox .dailyBox .daily:hover{ box-shadow: 0px 0px 6px #b3a1a1;}
+.proBox .dailyBox .daily .img{ padding:10px;}
+.proBox .dailyBox .daily .img img{ width:100%; height:100%; max-width:197px; max-height:197px;}
+.proBox .dailyBox .daily h1{ line-height:18px; height:44px; overflow:hidden; padding:6px 10px 0; margin-bottom:6px;}
+.proBox .dailyBox .daily h1 a{ color:#666;}
+.proBox .dailyBox .daily h1 a:hover{ color:red;}
+.proBox .dailyBox .daily ul{ line-height:24px; padding:0 10px;}
+.proBox .dailyBox .daily ul li{ color:red; font-size:18px; line-height:26px; padding-bottom:15px;}
+.proBox .dailyBox .daily ul li.left{ float:left;}
+.proBox .dailyBox .daily ul input{ float:right; color:white; line-height:26px; padding:0 14%; background-color:#e71e17; border:none; border-radius:4px;}
+.proBox .dailyBox .daily ul li.right{ float:right; margin-top:2px;}
+.proBox .classifyBox{ background-color:#fffafa; padding-top:40px;}
+.proBox .careBox{ padding-bottom:60px;}
+.proBox .classifyBox .title{ font-size:16px; line-height:16px;}
+.proBox .FruitBox .title{ padding-left:10px; border-left:4px #f8ad00 solid;}
+.proBox .vegetablesBox .title{ padding-left:10px; border-left:4px #64c333 solid;}
+.proBox .aquaticBox .title{ padding-left:10px; border-left:4px #5fb3f3 solid;}
+.proBox .ProcessingBox .title{ padding-left:10px; border-left:4px #f7a945 solid;}
+.proBox .careBox .title{ padding-left:10px; border-left:4px #15d4d4 solid;}
+.proBox .classifyBox .row{ margin:10px 0 0;}
+.proBox .classifyBox .bannerPro{ width:20.8%;}
+.proBox .classifyBox .bannerPro img{ width:100%; max-width:237px; height:439px; margin-top:4px;}
+.proBox .classifyBox .classify{ padding:0;}
+.proBox .classifyBox .classify ul li{ background-color:white; border:none;}
+.proBox .classifyBox .crosswise li{ padding:12px; margin-left:4px; margin-top:4px; width:32.6%;}
+.proBox .classifyBox li:hover a{ color:#666;}
+.proBox .classifyBox li .img{ transition:all .5s;}
+.proBox .classifyBox li:hover .img{ transition:all .5s; margin-right:10px;}
+.proBox .classifyBox .crosswise h1{ font-size:16px; line-height:20px; height:20px; overflow:hidden; vertical-align:middle;}
+.proBox .classifyBox .crosswise h2{ line-height:20px; height:20px; overflow:hidden; margin-top:6px;}
+.proBox .FruitBox .crosswise h2{ color:#f8ad00;}
+.proBox .vegetablesBox .crosswise h2{ color:#64c333;}
+.proBox .aquaticBox .crosswise h2{ color:#5fb3f3;}
+.proBox .ProcessingBox .crosswise h2{ color:#f7a945;}
+.proBox .careBox .crosswise h2{ color:#15d4d4;}
+.proBox .classifyBox .crosswise .img{ width:140px; height:140px; float:right; margin-top:6px;}
+.proBox .classifyBox .crosswise .img img{ width:100%; height:100%; max-width:140px; max-height:140px; transition:all .4s;}
+.proBox .classifyBox .lengthwaysBox{ width:20.72%; float:right;}
+.proBox .classifyBox .lengthwaysBox .lengthways{ width:47%; float:left;}
+.proBox .classifyBox .lengthwaysBox li{ padding:12px; margin-top:4px;}
+.proBox .classifyBox .lengthwaysBox h1{ font-size:16px; line-height:20px; height:20px; overflow:hidden; vertical-align:middle;}
+.proBox .classifyBox .lengthwaysBox h2{ line-height:20px; height:58px; overflow:hidden; margin-top:6px;}
+.proBox .FruitBox .lengthwaysBox h2{ color:#f8ad00;}
+.proBox .vegetablesBox .lengthwaysBox h2{ color:#64c333;}
+.proBox .aquaticBox .lengthwaysBox h2{ color:#5fb3f3;}
+.proBox .ProcessingBox .lengthwaysBox h2{ color:#f7a945;}
+.proBox .careBox .lengthwaysBox h2{ color:#15d4d4;}
+.proBox .classifyBox .lengthwaysBox .img{ float:right; width:100px; height:100px; margin-top:18px;}
+.proBox .classifyBox .lengthwaysBox .img img{ width:100%; height:100%;}
+/* 右侧固定导航 */
+.fixedRight{ background-color:#1a1a1a; position:fixed; top:0; right:0; width:35px; height:100%; z-index:200;}
+.fixedRight ul{ position:absolute; top:30%; right:0;}
+.fixedRight ul li{ padding:10px 0;}
+.fixedRight ul li:hover{ background-color:#e71e17;}
+.fixedRight img{ display:block; margin:0 auto;}
+.fixedRight h1{ width:35px; padding:0 5px; color:white; line-height:20px; margin-top:10px; text-align:center;}
+.fixedRight h2{ width:35px; padding:0 5px; color:white; text-align:center; margin-top:5px;}
+.fixedRight .icon{ position:absolute; left:0; cursor:pointer;}
+.fixedRight .icon i{ font-size:14px; line-height:14px; width:35px; padding:10px 0;  color:white; text-align:center;}
+.fixedRight .icon .iconCon{ text-align:center; color:white; background-color:#4d4d4d; position:relative; right:100px; top:-34px; display:none;}
+.fixedRight .icon i:hover{ background-color:#e71e17;}
+
+.fixedRight .icon:hover .iconCon{ display:block;}
+.fixedRight .QrCode{ top:78%;}
+.fixedRight .QrCode .QrCodeCon{ background-color:#e71e17; border-radius:10px; right:116px; padding:10px; top:-77px;}
+.fixedRight .QrCode .QrCodeCon img{ padding:10px;}
+.fixedRight .QrCode .QrCodeCon h1{ width:100%; margin:0; padding-bottom:10px;}
+.fixedRight .backToTOP{  top:84%;}
+.fixedRight .backToTOP .iconCon{ width:100px; height:36px; line-height:36px;}
+
+/* 产品列表页 */
+.proBox .classifyOptions{ background-color:#fffafa; padding-top:40px;}
+.proBox .classifyOptions .classify{ border:1px #ccc solid; border-left:none; border-right:none; background-color:#f2f2f2;}
+.proBox .classifyOptions .classify h1{ float:left; width:12%; min-height:80px; font-size:16px; line-height:80px; background-color:#f2f2f2; text-align:center;}
+.proBox .classifyOptions .classify ul{ float:left; width:88%; min-height:80px; background-color:white; padding:20px 0;}
+.proBox .classifyOptions .classify li{ float:left; font-size:16px; line-height:40px; margin:0 15px; cursor:pointer; color:#006ea6;}
+.proBox .classifyOptions .classify li.current{ color:red;}
+.proBox .classifyOptions .classify li:hover{ color:red;}
+.proListContent{ background-color:#fffafa; padding:30px 0 0; margin:0; padding-bottom:60px;}
+.proListContent .searchPro{ width:80%; padding:0;}
+.proListContent .searchPro .classify{ background-color:#f2f2f2; border-top:1px #ccc solid; border-bottom:1px #ccc solid; height:60px;}
+.proListContent .searchPro .classify ul{ float:left; margin-top:10px; margin-left:15px; border-right:1px #ccc solid;}
+.proListContent .searchPro .classify ul li{ float:left; font-size:16px; line-height:36px; padding:0 20px; background-color:white; border:1px #ccc solid; border-right:none; cursor:pointer;
+  border-color: rgb(204, 204, 204);
+  background-image: -moz-linear-gradient( 90deg, rgb(224,224,224) 0%, rgb(250,250,250) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(224,224,224) 0%, rgb(250,250,250) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(224,224,224) 0%, rgb(250,250,250) 100%);
+}
+.proListContent .searchPro .classify ul li i{ margin-left:2px; line-height:38px;}
+.proListContent .searchPro .classify ul li.current{ color:red; background-image:none;}
+.proListContent .searchPro .classify ul li.current i{ color:red;}
+.proListContent .searchPro .classify .search{ float:right; margin-top:3px;}
+.proListContent .searchPro .classify .search .form-control{ font-size:16px; line-height:38px; height:38px;}
+.proListContent .searchPro .classify .search .but{ font-size:16px; height:38px;}
+.proListContent .selectedPro{ padding-right:0; width:20%;}
+.proListContent .selectedPro .selected{ background-color:white; border:1px #ccc solid;}
+.proListContent .selectedPro .title{ margin:18px;}
+.proListContent .selectedPro h1{ float:left; font-size:16px; line-height:16px;}
+.proListContent .selectedPro h2{ float:right; line-height:18px; color:#ccc;}
+.proListContent .searchPro .proListBox{ background-color:white; padding-right:12px;}
+.proListContent .searchPro .proList{ padding:0; padding-left:12px; padding-top:10px;}
+.proListContent .searchPro .proList ul{ border:1px #fff solid; padding:12px 8px 6px;}
+.proListContent .searchPro .proList ul:hover{ box-shadow: 0px 0px 6px #b3a1a1;}
+.proListContent .searchPro .proList ul li{}
+.proListContent .searchPro .proList ul img{ width:100%; height:100%; max-width:195px; max-height:195px;}
+.proListContent .searchPro .proList ul li.namePro{ line-height:18px; height:38px; overflow:hidden; margin-top:10px;}
+.proListContent .searchPro .proList ul li.namePro a{ color:#666;}
+.proListContent .searchPro .proList ul li.namePro a:hover{ color:red;}
+.proListContent .searchPro .proList ul li.price{ margin:5px 0;}
+.proListContent .searchPro .proList ul li.price a{ font-size:18px; line-height:20px; color:red;}
+.proListContent .searchPro .proList .paging{ padding:30px 0;}
+.proListContent .selected ul{ margin-bottom:20px;}
+.proListContent .selected ul li{ max-height:180px; max-width:180px;}
+.proListContent .selected ul img{ width:100%; height:100%; max-width:180px; max-height:180px;}
+.proListContent .selected ul li.namePro{ line-height:18px; height:38px; overflow:hidden; margin-top:10px;}
+.proListContent .selected ul li.namePro a{ color:#666;}
+.proListContent .selected ul li.price{ margin-top:5px;}
+.proListContent .selected ul li.price a{ font-size:18px; line-height:20px; color:red;}
+
+/* 渔牧精品区 */
+.highGoodsAreaBox{}
+.highGoodsAreaBox .row{ margin:0; background-color:#fcf7f7; padding-bottom:60px;}
+.highGoodsAreaBox .titleBox{ position:relative; margin-top:40px; margin-bottom:10px;}
+.highGoodsAreaBox .titleBox .title{ font-size:24px; line-height:36px; text-align:center; width:18%; margin:0 auto; background-color:#fcf7f7; position:relative; z-index:10;}
+.highGoodsAreaBox .titleBox .line{ width:80%; height:16px; background:url(../images/titlebj.png) repeat-x; position:absolute; left:10%; top:16px; z-index:5;}
+.highGoodsAreaBox .proList{ background-color:white; padding:0; margin-left:12px; margin-top:20px; width:23.7%;}
+.highGoodsAreaBox .proList .img{ width:100%; height:260px; margin:0 auto; padding:30px 25px 0; transition:.5s;}
+.highGoodsAreaBox .proList .img a{ display:block;}
+.highGoodsAreaBox .proList .img img{ width:100%; height:100%; max-width:220px; max-height:220px;}
+.highGoodsAreaBox .proList h1{ padding:0 8px; line-height:18px; margin-top:12px; height:36px; overflow:hidden;}
+.highGoodsAreaBox .proList h1 a:hover{ color:red;}
+.highGoodsAreaBox .proList ul{ margin-top:15px;}
+.highGoodsAreaBox .proList ul li{ float:left; font-size:16px; line-height:50px; color:white; text-align:center; cursor:pointer;}
+.highGoodsAreaBox .proList ul li.price{ background-color:#f75f3c; width:60%; position:relative;}
+.highGoodsAreaBox .proList ul li.price img{ position:absolute; top:0; left:0;}
+.highGoodsAreaBox .proList ul li.buyNow{ background-color:#ffa133; width:40%;}
+.highGoodsAreaBox .proList ul li.buyNow a{ background-color:#ffa133; width:100%; display:block; font-size:16px; line-height:50px; color:white;}
+.highGoodsAreaBox .proList:hover .img{ padding-top:15px; padding-bottom:15px;}
+
+/* 产品详情页 */
+.detailsBox{ padding-top:30px; background-color:#fffafa; padding-left:0; padding-right:0;}
+.detailsBox .multipleBox{ width:360px; overflow:hidden; float:left;}
+.detailsBox .tb-pic img{ vertical-align:middle;}
+.detailsBox .tb-thumb{ overflow:hidden;}
+.detailsBox .tb-thumb li{background:none repeat scroll 0 0 transparent;float:left; overflow:hidden; margin-right:10px; margin-top:20px;}
+.detailsBox .tb-s310, .tb-s310 img{ width:360px;}/* 显示图片 */
+.detailsBox .tb-s40, .tb-s40 img{ width:62px; height:62px;}/* 底部小图片 */
+.detailsBox .tb-booth{position:relative;z-index:1; width:360px; height:360px;}
+.detailsBox .tb-booth img{ border:1px #ccc solid;}
+.detailsBox .tb-thumb .tb-selected{ border:1px #e71e17 solid;}
+.detailsBox .tb-thumb .tb-selected img{ width:62px; height:62px}
+.detailsBox .tb-thumb li{ border:1px solid #e5e5e5;}
+.detailsBox .tb-thumb li:last-child{ margin-right:0;}
+.zoomDiv{ z-index:999; position:absolute; top:0px; left:0px; background:#fff; border:1px solid #ccc;display:none;overflow:hidden;}
+.zoomMask{ position:absolute; background:url("../images/mask.png") repeat scroll 0 0 transparent;cursor:move;z-index:1;}
+.detailsBox .proBox{ float:right; width:66%;}
+.detailsBox .proBox h1{ font-size:16px; line-height:22px; max-height:44px; overflow:hidden; margin-top:10px;}
+.detailsBox .priceBox{ background-color:#f2f2f2; border:1px #ccc solid; margin-top:8px; padding-left:20px; padding-top:8px; padding-bottom:18px;}
+.detailsBox .priceBox li{ margin-top:8px;}
+.detailsBox .priceBox .title{ color:#999; font-size:18px; line-height:22px;}
+.detailsBox .priceBox .price{ color:#e71e17; font-size:22px; line-height:22px;}
+.detailsBox .priceBox .buyPrice{ background-color:#e71e17; padding:1px 6px; color:white; margin-left:5px;}
+.detailsBox .priceBox .marketPrice{ font-size:22px; line-height:22px; color:#999; text-decoration:line-through;}
+.detailsBox .numberBox li{ margin-left:20px; margin-top:20px;}
+.detailsBox .numberBox li:nth-child(1){ margin-top:0;}
+.detailsBox .numberBox li:nth-child(1) label{ margin-top:20px; margin-bottom:25px;}
+.detailsBox .numberBox li:nth-child(1) .item{ margin-top:20px;}
+
+.detailsBox .numberBox label{ float:left; font-size:14px; line-height:36px; font-weight:normal; margin:0; margin-right:5px;}
+.detailsBox .numberBox .item{ display:inline-block; font-size:14px; line-height:34px; border:1px #ccc solid; padding:0 10px; margin-left:10px; margin-top:25px; cursor:pointer;}
+.detailsBox .numberBox li div.current{ color:#e71e17; border:1px #e71e17 solid;}
+.detailsBox .numberBox .item:hover{ color:#e71e17; border:1px #e71e17 solid;}
+.detailsBox .numberBox .button{ float:left; width:5%; font-size:16px; line-height:32px; text-align:center; border:1px #ccc solid; background-color:#f1f1f1;}
+.detailsBox .numberBox .text{ float:left; font-size:14px; line-height:32px; text-align:center; width:8%; border:none; border-top:1px #ccc solid; border-bottom:1px #ccc solid;}
+.detailsBox .butBox{ margin-top:25px; margin-left:20px;}
+.detailsBox .butBox li{ float:left; width:16%; margin-right:30px;}
+.detailsBox .butBox li input{ width:100%; font-size:16px; line-height:40px; border:none; color:white;}
+.detailsBox .butBox .buy{ background-color:#e71e17;}
+.detailsBox .butBox .join{ background-color:#ff9933;}
+.detailsBox .proBox h2{ margin-left:20px; margin-top:20px; color:#999;}
+.detailsProBox{ padding-top:40px; background-color:#fffafa;}
+.detailsProBox .row{ margin:0;}
+.detailsProBox .SellHotPro{ width:23%; float:left; margin-bottom:60px;}
+.detailsProBox .classifyBox{ width:100%; margin-bottom:20px; padding-bottom:15px; background-color:white; border:1px #ccc solid;}
+.detailsProBox .classifyBox h1{ font-size:16px; line-height:16px; margin:20px 0 8px;}
+.detailsProBox .classifyBox li{ line-height:28px; height:28px; overflow:hidden;}
+.detailsProBox .classifyBox li a{ font-size:14px;}
+.detailsProBox .classifyBox li a:hover{ color:#e71e17;}
+.detailsProBox .selectedPro{ padding:0; width:100%;}
+.detailsProBox .selectedPro .selected{ background-color:white; border:1px #ccc solid;}
+.detailsProBox .selectedPro .title{ margin:20px 18px;}
+.detailsProBox .selectedPro h1{ float:left; font-size:16px; line-height:16px;}
+.detailsProBox .selectedPro h2{ float:right; line-height:18px; color:#ccc;}
+.detailsProBox .selected ul{ margin-bottom:25px; padding:0 20px;}
+.detailsProBox .selected ul li{ max-height:220px; max-width:220px;}
+.detailsProBox .selected ul img{ width:100%; height:100%; max-width:220px; max-height:220px;}
+.detailsProBox .selected ul li.namePro{ line-height:20px; height:40px; overflow:hidden; margin-top:10px;}
+.detailsProBox .selected ul li.namePro a{ color:#666;}
+.detailsProBox .selected ul li.price{ margin-top:8px;}
+.detailsProBox .selected ul li.price a{ font-size:18px; line-height:20px; color:red;}
+.detailsProBox .selected ul li.price span{ float:right; margin-right:10px; color:#999; line-height:20px;}
+.detailsProBox .detailsPro{ float:right; width:73%; margin-bottom:60px;}
+.detailsProBox .detailsPro .title{ background-color:#f2f2f2; border:1px #ccc solid; border-left:none; border-right:none;}
+.detailsProBox .detailsPro .title h1{ width:15%; text-align:center; background-color:#e71e17; color:white; font-size:16px; line-height:40px; float:left;}
+.detailsProBox .detailsPro .title ul{ float:left;}
+.detailsProBox .detailsPro .title ul li{ float:left; font-size:14px; line-height:40px; text-align:center; cursor:pointer; padding:0 5px; margin-left:15px;}
+.detailsProBox .detailsPro .title ul li.current{ color:red;}
+.detailsProBox .detailsPro .parameter{ padding:20px; border-bottom:1px #ccc solid;}
+.detailsProBox .detailsPro .parameter li{ font-size:14px; line-height:28px; height:28px; overflow:hidden;}
+.detailsProBox .detailsPro .img{ padding:30px;}
+.detailsProBox .detailsPro .img img{ width:100%;}
+.detailsProBox .detailsPro .evaluationBox{}
+.detailsProBox .detailsPro .evaluationBox .listBox{ margin-top:40px;}
+.detailsProBox .detailsPro .evaluationBox .user{ float:left; width:20%;}
+.detailsProBox .detailsPro .evaluationBox .user img{ margin:0 auto;}
+.detailsProBox .detailsPro .evaluationBox .user h1{ margin-top:10px; text-align:center; line-height:22px; height:44px; overflow:hidden;}
+.detailsProBox .detailsPro .evaluationBox .content{ float:left; width:80%; border-bottom:1px #ccc solid; padding-bottom:35px;}
+.detailsProBox .detailsPro .evaluationBox .content ul{ float:left; width:74%; padding:0 30px;}
+.detailsProBox .detailsPro .evaluationBox .content ul li{ float:left; line-height:24px;}
+.detailsProBox .detailsPro .evaluationBox .content ul li.current{ margin-top:20px; max-height:72px;}
+.detailsProBox .detailsPro .evaluationBox .content h2{ float:left; width:26%;}
+
+/* 购物车页面 */
+.cartContentBox{}
+.cartContentBox .cartPromptBox{ background-color:#fffafa; padding-top:60px;}
+.cartContentBox .cartPrompt{ width:600px; margin:0 auto; }
+.cartContentBox .cartPromptBox ul{ float:left; position:relative;}
+.cartContentBox .cartPromptBox ul:nth-child(2){ top:0; left:-4px; z-index:1;}
+.cartContentBox .cartPromptBox ul:nth-child(3){ top:0; left:-8px; z-index:2;}
+.cartContentBox .cartPromptBox ul.bright{ z-index:3;}
+.cartContentBox .cartPromptBox ul.bright li{ color:#74cc47;}
+.cartContentBox .cartPromptBox ul .long{ border-radius:4px;
+  background-color: rgb(204, 204,204);
+  width: 200px;
+  height: 6px;
+}
+.cartContentBox .cartPromptBox ul.bright .long{ background-color: rgb(116, 204, 71);}
+.cartContentBox .cartPromptBox ul .round{ text-align:center; color:#ccc; line-height:20px; position:absolute; top:-8px; left:50%; margin-left:-10px;
+  border-radius: 50%;
+  background-color: rgb(204, 204,204);
+  width: 20px;
+  height: 20px;
+}
+.cartContentBox .cartPromptBox ul .round{ background-color: rgb(204, 204,204); color:white;}
+.cartContentBox .cartPromptBox ul.bright .round{ background-color: rgb(116, 204, 71); color:white;}
+.cartContentBox .cartPromptBox ul .Prompt{ text-align:center; margin-top:18px; color:#ccc; font-size:14px;}
+.cartContentBox .cartPromptBox ul.bright .Prompt{ color:#74cc47;}
+.cartContentBox .cartContent{ background-color:#fffafa; padding-bottom:80px;}
+.cartContentBox .cartContent > h1{ padding-top:10px; font-size:16px; line-height:24px; background-color:#fffafa; margin-left:20px;}
+.cartContent .table{ margin-top:20px;}
+.cartContent thead tr{ background-color:#f2f2f2; border-top:1px #ccc solid; border-bottom:1px #ccc solid;} 
+.cartContent thead tr th{ text-align:center; border:none; font-size:14px;} 
+.cartContent tbody tr{ background-color:white; border-bottom:1px #ccc solid;} 
+.cartContent tbody tr td{ border:none; vertical-align:middle; text-align:center; max-height:80px;}
+.cartContent .check{ position:static; margin:0 auto; width:16px; height:16px; outline:none; vertical-align:middle; text-align:center;}
+.cartContent .goods img{ float:left; width:62px; height:62px;}
+.cartContent .goods .span{ float:left; width:78%; line-height:18px; max-height:48px; overflow:hidden; text-align:left; margin-left:20px; margin-top:14px;}
+.cartContent .goods .span:hover{ color:red;}
+.cartContent .price{ font-size:14px; line-height:14px;}
+.cartContent .color{ color:red; font-weight:bold;}
+.cartContent .count .reduce{ margin-left:7px;}
+.cartContent .count button{ float:left; width:30px; height:32px; line-height:26px;}
+.cartContent .count input{ float:left; width:42%; height:32px; line-height:32px; padding:4px 0; text-align:center; border:none; border-top:1px #999 solid; border-bottom:1px #999 solid;}
+.cartContent tbody tr td .delete:hover{ color:red; cursor:pointer;}
+.cartContent .settlement{ margin-top:40px; background-color:white; border-top:1px #ccc solid; border-bottom:1px #ccc solid;}
+.cartContent .settlement .checkAll{ float:left; margin-left:38px;}
+.cartContent .settlement .checkAll input{ float:left; margin-top:17px;}
+.cartContent .settlement .checkAll label{ float:left; font-size:14px; line-height:50px; margin:0; font-weight:normal; margin-left:10px;}
+.cartContent .settlement ul{ float:right;}
+.cartContent .settlement ul li{ float:left; margin-left:40px; font-size:14px;}
+.cartContent .settlement ul li label{ color:red; line-height:50px; margin:0; font-size:14px;}
+.cartContent .settlement ul li.but a{ background-color:#e71e17; display:block; width:100px; font-size:14px; line-height:50px; text-align:center; color:white;}
+
+/* 结算页面 */
+.settlementContent{ padding-bottom:80px; background-color:#fffafa;}
+.settlementContent > h1{ padding:10px 0 20px 20px; font-size:18px; line-height:24px;}
+.settlementContent .orderInformationBox{ border:1px #ccc solid; background-color:white; padding:20px;}
+.settlementContent .orderInformationBox label{ font-weight:normal; margin:0;}
+.settlementContent .consignee{ margin-top:10px; border-bottom:none; padding-bottom:18px; background-color:white;}
+.settlementContent .consignee .title h1{ float:left;}
+.settlementContent .consignee .title h2{ float:right; color:#0080ff; cursor:pointer;}
+.settlementContent .consignee .title h2 a{ color:#0080ff; font-size:14px; line-height:14px;}
+.settlementContent .consignee ul{ padding:0 20px 20px; margin-top:15px; border-bottom:1px #ccc solid;}
+.settlementContent .consignee ul li{ float:left; margin-left:30px;}
+.settlementContent .consignee ul li:nth-child(1){ margin-left:0;}
+.settlementContent .consignee ul li input[type="radio"]{ width:14px; height:14px; position:relative; left:0; top:1px;}
+.settlementContent .consignee ul li label{ margin-left:6px; font-size:14px; line-height:14px;}
+.settlementContent .goods img{ float:left; width:62px; height:62px;}
+.settlementContent .consignee .settlementAmount{ border:none; margin:0; padding:0;}
+.settlementContent .consignee .settlementAmount li{ float:none; text-align:right; font-size:14px; line-height:14px; margin-top:25px; margin-left:0; padding-right:20px;}
+.settlementContent .consignee .settlementAmount li.sumPayable{ border-top:1px #ccc solid; border-bottom:1px #ccc solid; line-height:58px; background-color:#f2f2f2;}
+.settlementContent .consignee .settlementAmount li.but{ padding-right:0;}
+.settlementContent .consignee .settlementAmount li.but a{ background-color:#e71e17; font-size:14px; line-height:40px; padding:10px 20px; color:white;}
+.settlementContent .consignee .settlementAmount li label{ color:red; margin-right:5px; font-weight:bold; font-size:14px; line-height:14px;}
+.settlementContent .consignee .deduction thead tr{ width:100%;}
+.settlementContent .consignee .deduction thead tr th{ width:20%;}
+.setPop{ width:100%; height:100%; position:fixed; top:0; left:0; z-index:50; background: rgba(204,204,204,.5); display:none;}
+.setPop .pop{ width:600px; height:380px; background-color:white; position:absolute; top:28%; left:50%; margin-left:-300px;}
+.setPop .pop .title{ background-color:#e64545; padding:0 15px;}
+.setPop .pop .title h1{ float:left; line-height:40px; color:white;}
+.setPop .pop .title i{ float:right; font-size:14px; line-height:40px; color:white; cursor:pointer;}
+.setPop .pop ul li{ margin:30px 0 0 20px;}
+.setPop .pop ul li label{ font-weight:normal; margin:0; width:100px; text-align:right;}
+.setPop .pop ul li input{ padding:0 5px; line-height:24px; width:60%;}
+.setPop .pop ul li span{ font-size:20px; color:red; position:relative; top:5px; left:-5px;}
+.setPop .pop ul li select{ padding:0 5px;}
+.setPop .pop button{ background-color:#e71e17; border:none; color:white; line-height:32px; padding:0 12px; margin-top:30px; margin-left:125px; border-radius:4px; outline:none;}
+
+/* 提交成功页 */
+.submitSucceContent{ padding-bottom:80px; background-color:#fffafa; padding-top:50px;}
+.submitSucceContent .submitSucceBox{ background-color:white; border:1px #ccc solid; padding:60px 0;}
+.submitSucceContent .submitSucceBox .img{ float:left; margin-left:30%;}
+.submitSucceContent .submitSucceBox .submitSucce{ float:left; margin-left:40px;}
+.submitSucceContent .submitSucceBox .submitSucce h1{ font-size:40px; line-height:40px; color:#74cc47;}
+.submitSucceContent .submitSucceBox label{ font-weight:normal; margin:0;}
+.submitSucceContent .submitSucceBox .submitSucce h2{ margin-top:15px;}
+.submitSucceContent .submitSucceBox .submitSucce label{ color:red;}
+.submitSucceContent .submitSucceBox ul{ margin-top:20px; margin-left:30%;}
+.submitSucceContent .submitSucceBox ul li{ float:left; font-size:14px; line-height:14px;}
+.submitSucceContent .submitSucceBox ul li:nth-child(2){ margin-left:30px;}
+.submitSucceContent .submitSucceBox p{ font-size:14px; line-height:14px; color:#999; margin-top:20px; text-align:center;} 
+.submitSucceContent > ul{ float:right; margin-top:40px; margin-right:20px;}
+.submitSucceContent > ul li{ float:left; margin-left:30px;}
+.submitSucceContent > ul li a{ font-size:16px; line-height:30px; color:red;}
+.submitSucceContent > ul li a img{ display:inherit; margin-right:6px; margin-top:-2px;}
+.submitSucceContent > ul li a button{ background-color:#e71e17; color:white; border:none; outline:none; font-size:16px; line-height:30px; padding:0 18px; border-radius:4px;}
+
+/* 全部订单页 */
+.myQrderBox{}
+.myQrderBox .myQrder{ background-color:#fffafa; padding-top:40px;}
+.myQrderBox .leftNavBox{ float:left; width:140px;}
+.myQrderBox .leftNavBox ul{ margin-left:20px;}
+.myQrderBox .leftNavBox ul h1{ font-size:16px; line-height:30px;}
+.myQrderBox .leftNavBox ul li{ line-height:26px;}
+.myQrderBox .leftNavBox ul li.current a{ color:red;}
+.myQrderBox .leftNavBox ul li a{ color:#999;}
+.myQrderBox .rightConBox{ float:right; width:85%; margin-bottom:60px; min-height:590px;}
+.myQrderBox .rightConBox .rightCon{ background-color:white; width:100%; padding:20px;}
+.myQrderBox .rightConBox .titleBox{ border-bottom:2px #ccc solid;}
+.myQrderBox .rightConBox .titleBox li{ float:left; border-bottom:2px red solid; font-size:16px; line-height:16px; color:red; padding:0 10px 8px; position:relative; left:0; top:2px;}
+.myQrderBox .rightConBox form{ margin-top:30px;}
+.myQrderBox .rightConBox form .text{ float:left;}
+.myQrderBox .rightConBox form .text input{ width:260px; padding:0 10px; font-size:14px; line-height:32px; border:1px #ccc solid;}
+.myQrderBox .rightConBox form button{ float:left; width:70px; font-size:14px; line-height:30px; text-align:center; outline:none;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(191, 191, 191);
+  background-image: -moz-linear-gradient( 90deg, rgb(227,227,227) 0%, rgb(255,255,255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(227,227,227) 0%, rgb(255,255,255) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(227,227,227) 0%, rgb(255,255,255) 100%);
+}
+.myQrderBox .rightConBox form button i{ font-size:16px; line-height:16px; top:3px;}
+.myQrderBox .rightConBox form button.seniorBut i{ font-size:14px; line-height:14px;}
+.myQrderBox .rightConBox .senior{ margin-top:30px; display:none;}
+.myQrderBox .rightConBox .senior li{ float:left; font-size:14px; line-height:32px; margin-left:15px;}
+.myQrderBox .rightConBox .senior li.current{ margin-left:0;}
+.myQrderBox .rightConBox .senior li select{ font-size:14px; padding:0 5px; height:32px; outline:none; min-width:120px;}
+.myQrderBox .rightConBox .senior li select option{ padding:0 5px; font-size:14px;}
+.myQrderBox .rightConBox .senior li input{ line-height:30px; padding:0 10px; width:40.5%;}
+.myQrderBox .rightConBox .senior li .but{ background-color:#e71e17; width:70px; font-size:16px; line-height:32px; text-align:center; outline:none; border:none; color:white;}
+.myQrderBox .rightConBox .table_list{ margin:0;}
+.myQrderBox .rightConBox .rightCon .row{ border:none;}
+.myQrderBox .rightConBox .rightCon > .table_list{ margin-top:30px;}
+.myQrderBox .rightConBox .table_list label{ font-weight:normal; margin:0;}
+.myQrderBox .rightConBox .table_list td{ text-align:center; vertical-align:middle;}
+.myQrderBox .rightConBox .table_list td.left{ text-align:left;}
+.myQrderBox .rightConBox .table_list thead tr{ background-color:#f2f2f2; border-top:1px #ccc solid; border-bottom:1px #ccc solid;}
+.myQrderBox .rightConBox .table_list thead td{ font-size:14px; line-height:25px;}
+.myQrderBox .rightConBox .list_group{ margin-top:25px;}
+.myQrderBox .rightConBox .table_list tbody .payBut,.myQrderBox .rightConBox .table_list tbody .cancelOrderBut{ cursor:pointer; line-height:22px;}
+.myQrderBox .rightConBox .table_title{ background-color:#f2f2f2; border:1px #ccc solid; border-bottom:none;}
+.myQrderBox .rightConBox .table_title li{ line-height:36px;}
+.myQrderBox .rightConBox .table_title li.current{ color:#808080;}
+.myQrderBox .rightConBox .table_title li.left{ float:left; margin-left:20px;}
+.myQrderBox .rightConBox .table_title li.right{ float:right; margin-right:20px;}
+.myQrderBox .rightConBox .table_title li i{ font-size:16px; top:3px; cursor:pointer;}
+.myQrderBox .rightConBox .table_title li i:hover{ color:red;}
+.myQrderBox .rightConBox .table_list tbody .img{ width:65px; height:65px; margin:0 3% 0 0; display:inline-block; vertical-align:middle;}
+.myQrderBox .rightConBox .table_list tbody .img img{ width:100%; height:100%;}
+.myQrderBox .rightConBox .table_list tbody label{ width:45%; line-height:18px; max-height:54px; display:inline-block; vertical-align:middle; text-align:left; overflow:hidden;}
+.myQrderBox .rightConBox .table_list tbody h1{ width:15%; display:inline-block;}
+.myQrderBox .rightConBox .table_list tbody h2{ width:17%; display:inline-block;}
+.myQrderBox .rightConBox .table_list tbody h3{ font-size:12px; line-height:20px;}
+.myQrderBox .rightConBox .table_list tbody td a:hover{ color:red;}
+.myQrderBox .rightConBox .payPopBox{ width:100%; height:100%; position:fixed; top:0; left:0; z-index:10; background: rgba(204,204,204,.5); display:none;}
+.myQrderBox .rightConBox .payPop{ width:500px; height:450px; position:fixed; top:26%; left:50%; margin-left:-250px; z-index:20; background-color:white; display:none;}
+.myQrderBox .rightConBox .payPop .title{ background-color:#e64545; height:40px; padding:0 15px;}
+.myQrderBox .rightConBox .payPop .title span,.payPop .title i{ color:white; font-size:16px; line-height:40px;}
+.myQrderBox .rightConBox .payPop .title span{ float:left;}
+.myQrderBox .rightConBox .payPop .title i{ float:right; cursor:pointer;}
+.myQrderBox .rightConBox .payPop h1{ font-size:18px; line-height:18px; text-align:center; margin-top:40px;}
+.myQrderBox .rightConBox .payPop h1 label{ font-weight:normal; margin:0; font-size:18px; line-height:18px; text-align:center; color:blue;}
+.myQrderBox .rightConBox .payPop .img{ width:230px; height:230px; padding:2px; border:2px #ccc solid; margin:25px auto;}
+.myQrderBox .rightConBox .payPop .img img{ width:100%; height:100%;}
+.myQrderBox .rightConBox .payPop h2{ font-size:16px; line-height:16px; text-align:center;}
+.myQrderBox .rightConBox nav{ text-align:right; margin-top:30px;}
+.myQrderBox .rightConBox .pagination{ margin:0;}
+.myQrderBox .rightConBox .prevBut,.myQrderBox .rightConBox .nextBut,.myQrderBox .rightConBox .pagination li{
+	margin-left:5px;
+	display:inline-block;
+	border:1px #ccc solid;
+	width:40px; height:40px;
+	text-align:center;
+	font-size:16px;
+	line-height:40px;
+	cursor:pointer;
+}
+.myQrderBox .rightConBox .pagination li.current{ background-color:#e71e17; border-color:#e71e17; color:white;}
+.myQrderBox .rightConBox .recommBox{ margin:0; padding:30px 20px; background-color:white; margin-top:40px;}
+.myQrderBox .rightConBox .selected{ background-color:white; border:1px #ccc solid; padding-right:0; width:100%; padding:15px;}
+.myQrderBox .rightConBox .selected .title{ margin:6px;}
+.myQrderBox .rightConBox .selected h1{ float:left; font-size:16px; line-height:16px;}
+.myQrderBox .rightConBox .selected h2{ float:right; line-height:18px; color:#ccc;}
+.myQrderBox .rightConBox .selected ul{ border:1px #ccc solid; padding:8px; margin:6px; width:18.66%;}
+.myQrderBox .rightConBox .selected ul li{ max-height:180px; max-width:180px;}
+.myQrderBox .rightConBox .selected ul img{ width:150px; height:150px;}
+.myQrderBox .rightConBox .selected ul li.namePro{ line-height:18px; height:38px; overflow:hidden; margin-top:10px;}
+.myQrderBox .rightConBox .selected ul li.namePro a{ color:#666;}
+.myQrderBox .rightConBox .selected ul li.price{ margin-top:3px;}
+.myQrderBox .rightConBox .selected ul li.price a{ font-size:16px; line-height:18px; color:red;}
+
+/* 未付款 */
+.rightConBox .table_list thead tr td select{ padding:1px 5px; outline:none;}
+.rightConBox .rightCon .prompt{ font-size:18px; line-height:18px; text-align:center; min-height:200px; line-height:150px;}
+
+/* 账户安全 */
+.accountSecurityBox{ background-color:#fff; padding-bottom:30px; overflow:hidden;}
+.accountSecurityBox > ul{ margin:0 auto; border-bottom:1px #e5e5e5 solid; padding:30px 0;}
+.accountSecurityBox > ul li{ float:left; line-height:30px; height:30px; text-align:center;}
+.accountSecurityBox > ul .img{ margin-left:4%; width:32px; height:32px; background:url(../images/icon-msg2013.png) no-repeat -63px -3px; display:inline-block;}
+.accountSecurityBox > ul .h1{ margin:0; width:15%; font-size:18px; font-weight:bold; color:#666; position:relative;}
+.accountSecurityBox > ul .h2{ margin:0; width:60%; padding:0 5%; text-align:left; border-left:1px #ccc solid; color:#999; font-size:14px;}
+.accountSecurityBox > ul .h3{ margin:0; width:10%;}
+.accountSecurityBox > ul .h3 a{ color:blue; font-size:14px; line-height:14px;}
+/* 个人信息 */
+.myQrderBox .personalCenterBox{ margin-bottom:40px;}
+.myQrderBox .personalCenterBox ul{ margin-left:10px; margin-top:25px;}
+.myQrderBox .personalCenterBox ul h1{ display:inline-block; width:10%; text-align:right; line-height:30px;}
+.myQrderBox .personalCenterBox ul li{ display:inline-block;}
+.myQrderBox .personalCenterBox ul li input{ line-height:30px; padding:0 6px; border:1px #ccc solid;}
+.myQrderBox .personalCenterBox ul li input[type="radio"]{ width:14px; height:14px; margin-right:4px; margin-left:20px; position:relative; top:2px; left:0;}
+.myQrderBox .personalCenterBox ul li:nth-child(2) input[type="radio"]{ margin-left:0;}
+.myQrderBox .personalCenterBox ul li select{ outline:none; height:32px; margin:0 5px; padding:0 5px;}
+.myQrderBox .personalCenterBox ul li:nth-child(2) select{ margin-left:0;}
+.myQrderBox .personalCenterBox > button{ line-height:26px; padding:0 12px; margin-top:30px; margin-left:106px;}
+
+/* 待评价 */
+.myQrderBox .evaluationBox{}
+.myQrderBox .evaluationBox ul{}
+.myQrderBox .evaluationBox ul h1{ width:12%; font-size:12px; display:inline-block;}
+.myQrderBox .evaluationBox ul li{}
+.myQrderBox .evaluationBox ul:nth-child(1){ margin:30px auto;}
+.myQrderBox .evaluationBox ul:nth-child(1) h1{ width:100%; font-size:18px; line-height:24px; font-weight:bold; display:block; text-align:center;}
+.myQrderBox .evaluationBox ul:nth-child(1) li{ width:100%; font-size:14px; line-height:14px; text-align:center; margin-top:15px;}
+.myQrderBox .evaluationBox ul:nth-child(1) li:nth-child(2){ margin-left:15px;}
+.myQrderBox .evaluationBox ul:nth-child(1) li label{ font-size:14px; line-height:14px; color:#999; font-weight:normal; margin-left:15px;}
+.myQrderBox .evaluationBox .starTipsBg{}
+.myQrderBox .evaluationBox .starTipsBg li{ width:50%; float:left; margin-left:0; margin-top:10px;}
+.myQrderBox .evaluationBox .starTipsBg h1{ width:24%; display:inline; float:left;}
+
+/*星星样式*/
+.myQrderBox .evaluationBox .starTipsBg .block{ width:76%; padding-top:5px; line-height:18px; display:inline; float:left;}
+.myQrderBox .evaluationBox .starTipsBg .block .star_score{ float:left;}
+.myQrderBox .evaluationBox .starTipsBg .star_list{ height:18px;margin:50px; line-height:18px;}
+.myQrderBox .evaluationBox .starTipsBg .block p,.block .attitude{ padding-left:20px; line-height:18px; display:inline-block;}
+.myQrderBox .evaluationBox .starTipsBg .block p span{ color:#C00; font-size:16px;}
+.myQrderBox .evaluationBox .starTipsBg .star_score { background:url(../images/stark2.png); width:160px; height:18px;  position:relative; }
+.myQrderBox .evaluationBox .starTipsBg .star_score a{ height:18px; display:block; text-indent:-999em; position:absolute;left:0;}
+.myQrderBox .evaluationBox .starTipsBg .star_score a:hover{ background:url(../images/stars2.png);left:0;}
+.myQrderBox .evaluationBox .starTipsBg .star_score a.clibg{ background:url(../images/stars2.png);left:0;}
+
+/* 订单详情 */
+.myQrderBox .rightConBox .table_list tbody h3 input{ padding:0 10px; margin-top:8px;}
+.orderDetailsBox .title{ margin-top:30px; font-size:14px; line-height:14px; margin-left:10px;}
+.orderDetailsBox table{ margin:0; margin-top:15px;}
+.orderDetailsBox tbody tr td{ padding:8px 10px;}
+.orderDetailsBox .orderDetails tbody tr td:nth-child(1){ width:14%; vertical-align:middle; text-align:center;}
+.orderDetailsBox .orderDetails tbody tr td:nth-child(2){ width:86%; max-width:798px; padding:10px; vertical-align:middle;}
+
+/* 收货地址 */
+.myQrderBox .shippingAddressBox{ padding-bottom:20px;}
+.myQrderBox .shippingAddressBox > button{ line-height:26px; padding:0 12px; margin-top:30px; margin-bottom:10px; overflow:hidden;}
+.myQrderBox .shippingAddressBox .shippingAddress{ border:1px #ccc solid; padding:20px; margin-top:20px; position:relative;}
+.myQrderBox .shippingAddressBox .shippingAddress ul li{ line-height:34px; color:#999;}
+.myQrderBox .shippingAddressBox .shippingAddress ul label{ font-weight:normal;}
+.myQrderBox .shippingAddressBox .shippingAddress h1{ position:absolute; top:20px; right:20px;}
+.myQrderBox .shippingAddressBox .shippingAddress h1 i{ font-size:16px; line-height:16px; cursor:pointer;}
+.myQrderBox .shippingAddressBox .shippingAddress h1 i:hover{ color:red;}
+.myQrderBox .shippingAddressBox .shippingAddress h2{ font-size:16px; line-height:16px; position:absolute; bottom:20px; right:20px; color:red; cursor:pointer;}
+
+/* 申请售后 */
+.afterApplicationBox{ margin-top:30px;}
+.myQrderBox .rightConBox .afterApplicationBox .table_list tbody label{ width:75%;}
+.afterApplicationBox .afterApplication ul{ border:1px #ccc solid; padding:30px;}
+.afterApplicationBox .afterApplication .editor{ border:1px red solid; margin-top:40px;}
+.afterApplicationBox .afterApplication .editor li{ line-height:50px;}
+.afterApplicationBox .afterApplication .editor label{
+	font-weight:normal;
+	border:1px #bfbfbf solid;
+	min-width:80px;
+	line-height:30px;
+	text-align:center;
+	padding:0 12px; margin:0; margin-left:15px;
+	cursor:pointer;
+}
+.afterApplicationBox .afterApplication .editor label.current{ color:red; border:1px red solid;}
+.afterApplicationBox .afterApplication .editor label:nth-child(1){ margin-left:0;}
+.afterApplicationBox .afterApplication .editor li .count{ display:inline-block;}
+.afterApplicationBox .afterApplication .editor .count button{ border:1px #ccc solid; background-color:white; outline:none; width:32px; line-height:26px; margin:0;}
+.afterApplicationBox .afterApplication .editor .count input{ border:1px #ccc solid; line-height:28px; padding:0 8px; text-align:center; width:80px; margin:0 5px;}
+.afterApplicationBox .afterApplication .editor li h1{ float:left; font-size:12px; line-height:12px;}
+.afterApplicationBox .afterApplication .editor textarea{ float:left; border:1px #ccc solid; margin-left:4px; outline:none; line-height:22px; padding:12px;}
+.afterApplicationBox .afterApplication .amend{ margin-top:25px; display:none;}
+.afterApplicationBox .afterApplication .amend:nth-child(3){ border:1px red solid;}
+.afterApplicationBox .afterApplication .amend li{ line-height:40px;}
+.afterApplicationBox .afterApplication .amend label{ font-weight:normal; margin:0; margin-left:4px;}
+.afterApplicationBox .afterApplication .amend .amendBut{ cursor:pointer; color:red; margin-left:8px;}
+.afterApplicationBox .afterApplication .amend label.current{ color:red; border:1px red solid; line-height:30px; padding:0 12px;}
+.afterApplicationBox .afterApplication .amend span{ color:#999; margin-left:30px;}
+.afterApplicationBox .afterApplication .amend select{ min-width:15%; height:30px; padding:0 5px; margin:12px 5px 0; outline:none; border:1px #ccc solid;}
+.afterApplicationBox .afterApplication .amend select:nth-child(1){ margin-left:0;}
+.afterApplicationBox .afterApplication .amend .input{ margin-left:60px;}
+.afterApplicationBox .afterApplication .amend input{ line-height:26px; padding:0 5px; width:20%; margin-left:4px; margin-top:15px; border:1px #ccc solid;}
+.afterApplicationBox .afterApplication .amend .input input{ width:60%;}
+.afterApplicationBox .afterApplication .amend .readonly input{ background-color:#f2f2f2;}
+.afterApplicationBox .afterApplication button{ line-height:26px; padding:0 12px; margin-top:30px; margin-left:30px;}
+
+/* 商家入驻 */
+.sellerCentralBox{ background-color:#fcf7f7;}
+.sellerCentralBox .titleBox{ background-color:#e64545; height:40px; margin-top:30px;}
+.sellerCentralBox .titleBox li{ font-size:16px; line-height:40px; padding-left:20px; color:white;}
+.sellerCentralBox .sellerCentral{ padding:30px; background-color:white; margin-bottom:30px;}
+
+.sellerCentralBox .sellerCentral .cartPromptBox{ background-color:white; padding-top:30px; margin-bottom:60px;}
+
+.sellerCentralBox .sellerCentral .from-seller{ margin-bottom:20px;}
+.sellerCentralBox .sellerCentral .from-seller label{ font-weight:normal; margin:0; font-size:14px; line-height:26px; width:12%; text-align:right; display:inline-block;}
+.sellerCentralBox .sellerCentral .from-seller input{ padding:0 5px; font-size:14px; line-height:26px; border:1px #ccc solid; width:32%; display:inline-block;}
+.sellerCentralBox .sellerCentral .from-seller input[type="file"]{ width:24.5%;}
+.sellerCentralBox .sellerCentral .from-seller button{ line-height:24px; padding:0 10px; margin-left:5px;}
+.sellerCentralBox .sellerCentral .from-seller i{ font-size:14px; line-height:26px; display:inline-block; margin-left:8px; cursor:pointer;}
+.sellerCentralBox .sellerCentral .from-seller i:hover{ color:red;}
+.sellerCentralBox .sellerCentral .from-seller span{ font-size:14px; line-height:26px; color:red; margin-left:8px; display:inline-block;}
+.sellerCentralBox .sellerCentral .from-seller select{ padding:0 6px; text-align:left; min-width:113px; line-height:28px; height:28px; display:inline-block;}
+.sellerCentralBox .sellerCentral .from-seller h1{ line-height:36px; margin-left:132px;}
+
+.sellerCentralBox .sellerCentral .img{ width:100%; border-bottom:1px #ccc solid; padding-bottom:30px;}
+.sellerCentralBox .sellerCentral .img img{ width:84%;}
+.sellerCentralBox .sellerCentral .img h1,.sellerCentralBox .sellerCentral .img p{ color:red; padding:0 30px; font-size:16px; line-height:28px;}
+.sellerCentralBox .sellerCentral .img h1{ margin:30px 0 10px;}
+
+.sellerCentralBox .sellerCentral a{ margin-top:30px; margin-left:134px;}
+.sellerCentralBox .sellerCentral a > button{ background-color:#e64545; color:white; border:none; outline:none; border-radius:4px; font-size:14px; line-height:32px; padding:0 22px;}
+
+.sellerCentralBox .submitSucceContent{ background-color:white; padding:0;}
+.sellerCentralBox .submitSucceContent .submitSucceBox{ background-color:white; border:1px #ccc solid; padding:60px 0;}
+.sellerCentralBox .submitSucceContent .submitSucceBox .img{ float:left; margin-left:22%; width:inherit; border-bottom:none; padding-bottom:0;}
+
+
+.licensePopBox{ position:fixed; top:0; left:0; background:rgba(204,204,204,.5); width:100%; height:100%; z-index:18; display:none;}
+.licensePop{ position:fixed; top:14%; left:50%; width:1000px; margin-left:-500px; background-color:white; padding:50px 0; z-index:20; display:none;}
+.licensePop i{ position:absolute; top:12px; right:12px; cursor:pointer; font-size:18px; line-height:18px; padding:12px;}
+.licensePop img{ margin:0 auto; max-width:90%; max-height:650px;}
+
+
+/* 常见问题分类_新手上路 */
+.helpBox .help{ background-color:#fffafa; padding-top:30px; padding-bottom:60px;}
+.helpBox .helpLeft{ float:left; width:200px;}
+.helpBox .helpLeft .title{ font-size:18px; height:40px; line-height:40px; padding-left:10px; color:#fff; background-color:#e65c5c;}
+.helpBox .helpLeft ul{ border-left:1px #ccc solid; border-right:1px #ccc solid;}
+.helpBox .helpLeft ul h1{ font-size:16px; height:36px; line-height:36px; padding-left:10px; cursor:pointer; border-bottom:1px solid #ccc; position:relative; background:#f5f5f5 url(../images/sanjiao_02.png) 182px 13px no-repeat;}
+.helpBox .helpLeft ul h1.current{ background:#f5f5f5 url(../images/sanjiao.png) 178px 15px no-repeat;}
+.helpBox .helpLeft ul li{ height:36px; line-height:36px; padding-left:10px; background:#fff; text-decoration:none; border-bottom:1px #ccc solid; display:none;}
+.helpBox .helpLeft ul li.tinct a{ color:red;}
+.helpBox .helpLeft ul li a{ font-size:14px;}
+.helpBox .helpLeft ul li a:hover{ color:red;}
+.helpBox .helpLeft .img{ width:200px; height:200px; border:1px #ccc solid; margin-top:20px; position:relative;}
+.helpBox .helpLeft .img label{
+	position:absolute; top:0; right:0;
+	color:#ccc;
+	width:50px;
+	padding-left:10px;
+	line-height:22px;
+	text-align:center;
+	border-bottom-left-radius:28px;
+	background-color:#f2f2f2;
+}
+.helpBox .helpLeft .img img{ width:100%;}
+
+.helpBox .helpRightBox{ float:right; width:79%; border:1px #ccc solid;}
+.helpBox .helpRightBox .title{ background-color:#f2f2f2; height:40px; font-size:16px; line-height:40px; padding-left:20px; border-bottom:1px #ccc solid;}
+.helpBox .helpRightBox .helpRight{ background-color:white; min-height:540px; padding:20px;}
+.helpBox .helpRightBox .helpRight h1{ font-size:16px; line-height:30px;}
+.helpBox .helpRightBox .helpRight p{ font-size:14px; text-align:justify; line-height:26px; padding-left:20px;}
+.helpBox .helpRightBox .helpRight .img{ margin:20px 30px 30px;}
+.helpBox .helpRightBox .helpRight .img img{ max-width:720px; border:1px #ccc solid;}
+/* 常见问题分类_联系我们 */
+.helpBox .helpRightBox table{ border:1px #ccc solid; width:94%; margin:20px auto 0;}
+.helpBox .helpRightBox table .title{ background-color:#f5f5f5;}
+.helpBox .helpRightBox table .title tr{ vertical-align:middle;}
+.helpBox .helpRightBox table .title td{ font-size:16px;}
+.helpBox .helpRightBox table td{ line-height:22px; height:40px; text-align:center; padding:0 10px; vertical-align:middle;}
+
+/* 常见问题分类_找回密码 */
+.helpBox .helpRightBox .helpRight a:hover{ color:red;}
+
+/* 页脚区 */
+.footerBox{ border-top:2px #e71e17 solid;}
+.footerBox .footer{ background-color:#fffafa; padding-top:40px; padding-bottom:30px; margin:0 auto;}
+.footerBox .footer .col-lg-2{ margin-left:2%;}
+.footerBox .footer ul{}
+.footerBox .footer ul h1{ font-size:16px; line-height:26px; margin-bottom:5px;}
+.footerBox .footer ul li a{ font-size:14px; line-height:24px; color:#999;}
+.footerBox .footer ul li a:hover{ color:red;}
+.footerBox .footer .imgBox{ padding-left:0;}
+.footerBox .footer .img{ position:relative; padding-left:0;}
+.footerBox .footer .img h1{ font-size:22px; line-height:22px; color:red; position:absolute; bottom:52px; right:15px;}
+.footerBox .footerLink{ background-color:#fffafa; border-top:1px #ccc solid;}
+.footerBox .footerLink ul{ padding-top:20px; width:75%; margin:0 auto;}
+.footerBox .footerLink ul li{ float:left;}
+.footerBox .footerLink ul li a{ font-size:14px; line-height:14px; padding:0 15px; border-right:1px #ccc solid;}
+.footerBox .footerLink ul li a:hover{ color:red;}
+.footerBox .footerLink ul li.current{ padding-left:15px; font-size:14px; line-height:14px;}
+.footerBox .ICP{ background-color:#fffafa; line-height:24px; text-align:center; padding:30px 0; color:#999;}
+.myOrderfooterBox{ border-top:1px #ccc solid;}
+.myOrderfooterBox .footerLink{ background-color:#fffafa; border-top:none;}
+.footerBox .noBackColor{ background-color:transparent;}
+
+@media (max-width:1200px){
+	/* 首页 */
+	.proBox .coreBox .core .img img{ width:131px; height:131px;}
+	.proBox .dailyBox .daily .img img{ width:164px; height:164px;}
+	.proBox .classifyBox .bannerPro img{ width:202px; height:373px;}
+	.proBox .classifyBox .crosswise .img img{ width:120px; height:120px;}
+	.proBox .classifyBox .lengthwaysBox .img img{ width:80px; height:80px;}
+	/* 产品列表页 */
+	.proListContent .searchPro .proList ul img{ width:161px; height:161px;}
+	.proListContent .selected ul img{ width:147px; height:147px;}
+	/* 产品详情页 */
+	.detailsProBox .selected ul img{ width:181px; height:181px;} 
+	/* 渔牧精品区 */
+	.highGoodsAreaBox .proList .img img{ width:180px; height:180px;}
+	
+	/* 订单中心 */
+	.myQrderBox .rightConBox .selected ul img{ width:120px; height:120px;}
+	.topNav .myOrderLogo .img-responsive{ margin-left:5%; margin-top:-10px;}
+	.footerBox .footer .img img{ width:96%;}
+	.footerBox .footer .img h1{ right:12px; bottom:45px; font-size:18px;}
+	.detailsBox .proBox{ width:60%;}
+	.myQrderBox .rightConBox .selected ul{ width:18.4%;}
+	.highGoodsAreaBox .proList .img{ height:220px;}
+}
+
+@media (min-width: 1200px) {
+	.proListContent .selectedPro{ padding-right:0; width:20%;}
+	.carousel-control.right{ right:-3%;}
+}
+	

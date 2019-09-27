@@ -1,0 +1,309 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>个人中心-待付款</title>
+<link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
+<link rel="stylesheet" href="../css/bootstrap-theme.css" type="text/css">
+<link rel="stylesheet" href="../css/no-responsive.css" type="text/css">
+<link rel="stylesheet" href="../css/index.css" type="text/css">
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/index.js"></script>
+<script src="../js/scroll.js"></script>
+</head>
+
+<body>
+<div class="topBar">
+	<div class="container">
+   		<ul class="nav navbar-nav navbar-right">
+            <li class="current"><a href="loginPage.html">你好，请登录</a></li>
+            <li><a href="registered.html">免费注册</a></li>
+            <li><a href="">注销</a></li>
+            <li><a href="myOrder.html">我的订单</a></li>
+            <li><a href="shangJiaRuZhu.html">卖家中心</a></li>
+            <li class="service">
+            	<a>客户服务<div class="icon"><i>◇</i></div></a>
+                <div class="itemBox">
+                	<ul class="item">
+                        <li><a href="helpMianFeiZhuCe.html" target="_blank">免费注册</a></li>
+                        <li><a href="helpGouWuLiuCheng.html" target="_blank">购物流程</a></li>
+                        <li><a href="helpZhaoHuiMiMa.html" target="_blank">找回密码</a></li>
+                        <li><a href="helpZhiFuFangShi.html" target="_blank">支付方式</a></li>
+                		<li><a href="helpZhiFuLiuCheng.html" target="_blank">支付流程</a></li>
+                        <li><a href="helpKuaiDiYunShu.html" target="_blank">快递运输</a></li>
+                		<li><a href="helpYanHuoJuShou.html" target="_blank">验货与拒收政策</a></li>
+                        <li><a href="helpFanXiuTuiHuan.html" target="_blank">返修退换货</a></li>
+                        <li><a href="helpQuXiaoDingDan.html" target="_blank">取消订单</a></li>
+                        <li><a href="helpLianXiWoMen.html" target="_blank">联系我们</a></li>
+                        <div class="clearfix"></div>
+                    </ul>	
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="topNav">
+	<div class="container">
+    	<div class="row myOrderLogo">
+        	<div class="col-md-3 col-lg-3 col-xs-3"><a href="index.html" target="_blank"><img src="../images/LOGO01.png"></a></div>
+        	<div class="col-md-4 col-lg-5 col-xs-4"><a href="index.html" target="_blank">商城首页</a><img src="../images/techanwang.png" class="img-responsive"></div>
+            <div class="col-md-4 col-lg-4 col-xs-4">
+            	<form action="" class="navbar-form navbar-left">
+                    <div class="input-group">
+                    	<i class="glyphicon glyphicon-search searchIcon"></i>
+                        <input type="text" placeholder="搜索关键词" class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default but">搜索</button>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="myQrderBox">
+	<div class="container">
+    	<div class="myQrder">
+			<div class="leftNavBox">
+                <ul>
+                    <h1>订单中心</h1>
+                    <li><a href="myOrder.html">全部订单</a></li>
+                    <li class="current"><a href="notPaying.html">待付款</a></li>
+                    <li><a href="notReceiving.html">待收货</a></li>
+                    <li><a href="noEvaluation.html">待评价</a></li>
+                    <li><a href="successfulDeal.html">交易成功</a></li>
+                    <li><a href="cancelOrder.html">取消订单记录</a></li>
+                    <div class="clearfix"></div>
+                </ul>
+                <ul>
+                    <h1>客户服务</h1>
+                    <li><a href="repairReturn.html">申请返修退换货</a></li>
+                    <li><a href="repairRecords.html">返修/退换记录</a></li>
+                    <div class="clearfix"></div>
+                </ul>
+                <ul>
+                    <h1>账户设置</h1>
+                    <li><a href="accountSecurity.html">账户安全</a></li>
+                    <li><a href="personalCenter.html">个人信息</a></li>
+                    <li><a href="shippingAddress.html">收货地址</a></li>
+                    <div class="clearfix"></div>
+                </ul>
+            </div>	
+            <div class="rightConBox">
+            	<div class="rightCon">
+                	<ul class="titleBox">
+                        <li>待付款</li>
+                        <div class="clearfix"></div>
+                    </ul>
+                    <form>
+                        <div class="text">
+                            <input type="text" placeholder="商品名称/订单号" value="">
+                        </div>
+                        <button type="button"><i class="glyphicon glyphicon-search" style="color:#999;"></i></button>
+                        <div class="clearfix"></div>
+                    </form>
+                    <table class="table table-responsive table_list">
+                        <thead>
+                            <tr>
+                                <td style=" width:52%;">
+                                	<select style="margin-right:150px;">
+                                		<option value="">近三个月订单</option>
+                                        <option value="">今年内订单</option>
+                                        <option value="">2016年订单</option>
+                                        <option value="">2015年订单</option>
+                                        <option value="">2015年以前订单</option>
+                                	</select>订单详情
+                                </td>
+                                <td style=" width:12%;">收货人</td>
+                                <td style=" width:16%;">商品金额</td>
+                                <td style=" width:10%;">订单状态</td>
+                                <td style=" width:10%;">相关操作</td>
+                            </tr>
+                        </thead>
+                    </table>
+                    <div class="list_group">
+                        <ul class="table_title">
+                            <li class="left current">2017-06-19 19:55:38</li>
+                            <li class="left">订单号： 123456789012345</li>
+                            <li class="right"><i class="glyphicon glyphicon-trash deleteBut"></i></li>
+                            <div class="clearfix"></div>
+                        </ul>
+                        <table class="table table-bordered table-responsive table_list">
+                            <tbody>
+                                <tr>
+                                    <td style=" width:52%;">
+                                        <div class="img"><img src="../images/pro01.png"></div>
+                                        <label><a href="">新鲜海南蜜瓜 肉质细嫩多汁 清甜可口 香味浓郁6元/斤</a></label>
+                                        <h1>x1</h1>
+                                    </td>
+                                    <td style=" width:12%;">收货人名字</td>
+                                    <td style=" width:16%;"><h3>￥418.00</h3><h3>(含运费：￥0.00)</h3></td>
+                                    <td style=" width:10%;">未付款</td>
+                                    <td style=" width:10%;">
+                                    	<div class="payBut">立即支付</div>
+                                        <div class="cancelOrderBut">取消订单</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- 支付弹窗 -->
+                    <div class="payPopBox payshow payOut"></div>
+                    <div class="payPop payshow">
+                    	<div class="title">
+                        	<span>扫码支付</span>
+                            <i class="glyphicon glyphicon-remove payOut"></i>
+                            <div class="clearfix"></div>
+                        </div>
+                        <h1>请用<label>支付宝</label>扫码付款</h1>
+                        <div class="img"><img src="../images/qrCod.png"></div>
+                        <h2>对准屏幕上的二维码进行支付</h2>
+                    </div>
+                    <script>
+                    	$(".payBut").click(function(){
+							$(".payshow").fadeIn(300);
+						})
+						$(".payOut").click(function(){
+							$(".payshow").fadeOut(300);
+						})
+                    </script>
+                    <nav>
+                        <div class="prevBut"><i class="glyphicon glyphicon-menu-left"></i></div>
+                        <ul class="pagination">
+                            <li class="current">1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>4</li>
+                        </ul>
+                        <div class="nextBut"><i class="glyphicon glyphicon-menu-right"></i></div>
+                    </nav>
+                    <script>
+                        <!-- 删除列表组 list_group -->
+                        $(".deleteBut").click(function(){
+                            $(this).parents(".list_group").remove();
+                        })
+                        $(".pagination li").click(function(){
+                            $(this).addClass("current").siblings().removeClass("current");
+                        })
+                    </script>
+                    <div class="prompt">没有待付款的订单~</div>  <!--无订单提示，有订单时隐藏-->
+                </div>
+                <div class="row recommBox">
+                    <div class="selected">
+                        <div class="title">
+                            <h1>猜你喜欢</h1>
+                            <h2>广告</h2>
+                            <div class="clearfix"></div>
+                        </div>
+                        <ul class="col-sm-2 col-xs-2">
+                            <li><a href=""><img src="../images/product01.png"></a></li>
+                            <li class="namePro"><a href="">智利进口蓝莓细致圆熟智利进口蓝莓细致圆熟智利进口蓝莓细致圆熟</a></li>
+                            <li class="price"><a href="">￥13.80</a></li>
+                        </ul> 
+                        <ul class="col-sm-2 col-xs-2">
+                            <li><a href=""><img src="../images/product02.png"></a></li>
+                            <li class="namePro"><a href="">智利进口蓝莓细致圆熟智利进口蓝莓细致圆熟智利进口蓝莓细致圆熟</a></li>
+                            <li class="price"><a href="">￥13.80</a></li>
+                        </ul>
+                        <ul class="col-sm-2 col-xs-2">
+                            <li><a href=""><img src="../images/product03.png"></a></li>
+                            <li class="namePro"><a href="">智利进口蓝莓细致圆熟智利进口蓝莓细致圆熟智利进口蓝莓细致圆熟</a></li>
+                            <li class="price"><a href="">￥13.80</a></li>
+                        </ul>
+                        <ul class="col-sm-2 col-xs-2">
+                            <li><a href=""><img src="../images/product04.png"></a></li>
+                            <li class="namePro"><a href="">智利进口蓝莓细致圆熟智利进口蓝莓细致圆熟智利进口蓝莓细致圆熟</a></li>
+                            <li class="price"><a href="">￥13.80</a></li>
+                        </ul>
+                        <ul class="col-sm-2 col-xs-2">
+                            <li><a href=""><img src="../images/product05.png"></a></li>
+                            <li class="namePro"><a href="">智利进口蓝莓细致圆熟智利进口蓝莓细致圆熟智利进口蓝莓细致圆熟</a></li>
+                            <li class="price"><a href="">￥13.80</a></li>
+                        </ul>
+                        <ul class="col-sm-2 col-xs-2">
+                            <li><a href=""><img src="../images/product01.png"></a></li>
+                            <li class="namePro"><a href="">智利进口蓝莓细致圆熟智利进口蓝莓细致圆熟智利进口蓝莓细致圆熟</a></li>
+                            <li class="price"><a href="">￥13.80</a></li>
+                        </ul> 
+                        <ul class="col-sm-2 col-xs-2">
+                            <li><a href=""><img src="../images/product02.png"></a></li>
+                            <li class="namePro"><a href="">智利进口蓝莓细致圆熟智利进口蓝莓细致圆熟智利进口蓝莓细致圆熟</a></li>
+                            <li class="price"><a href="">￥13.80</a></li>
+                        </ul>
+                        <ul class="col-sm-2 col-xs-2">
+                            <li><a href=""><img src="../images/product03.png"></a></li>
+                            <li class="namePro"><a href="">智利进口蓝莓细致圆熟智利进口蓝莓细致圆熟智利进口蓝莓细致圆熟</a></li>
+                            <li class="price"><a href="">￥13.80</a></li>
+                        </ul>
+                        <ul class="col-sm-2 col-xs-2">
+                            <li><a href=""><img src="../images/product04.png"></a></li>
+                            <li class="namePro"><a href="">智利进口蓝莓细致圆熟智利进口蓝莓细致圆熟智利进口蓝莓细致圆熟</a></li>
+                            <li class="price"><a href="">￥13.80</a></li>
+                        </ul>
+                        <ul class="col-sm-2 col-xs-2">
+                            <li><a href=""><img src="../images/product04.png"></a></li>
+                            <li class="namePro"><a href="">智利进口蓝莓细致圆熟智利进口蓝莓细致圆熟智利进口蓝莓细致圆熟</a></li>
+                            <li class="price"><a href="">￥13.80</a></li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+
+<div class="footerBox">
+	<div class="container">
+    	<div class="row footer">
+            <div class="col-md-2 col-lg-2 col-xs-2">
+                <ul>
+                    <h1>新手上路</h1>
+                    <li><a href="helpMianFeiZhuCe.html" target="_blank">免费注册</a></li>
+                    <li><a href="helpGouWuLiuCheng.html" target="_blank">购物流程</a></li>
+                    <li><a href="helpZhaoHuiMiMa.html" target="_blank">找回密码</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xs-2">
+                <ul>
+                    <h1>付款方式</h1>
+                    <li><a href="helpZhiFuFangShi.html" target="_blank">支付方式</a></li>
+                	<li><a href="helpZhiFuLiuCheng.html" target="_blank">支付流程</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xs-2">
+                <ul>
+                    <h1>配送信息</h1>
+                    <li><a href="helpKuaiDiYunShu.html" target="_blank">快递运输</a></li>
+                	<li><a href="helpYanHuoJuShou.html" target="_blank">验货与拒收政策</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xs-2">
+                <ul>
+                    <h1>售后服务</h1>
+                    <li><a href="helpFanXiuTuiHuan.html" target="_blank">返修退换货</a></li>
+                    <li><a href="helpQuXiaoDingDan.html" target="_blank">取消订单</a></li>
+                    <li><a href="helpLianXiWoMen.html" target="_blank">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-lg-3 col-xs-3 imgBox">
+            	<div class="img">
+                	<h1>400-123-0771</h1>
+                	<img src="../images/contact.png">
+                </div>
+            </div>
+        </div>
+        <div class="footerLink">
+        </div>
+        <div class="ICP">Copyright©2017 广西第一特产网 All Rights Reserved 广西第一特产网版权所有<br>
+桂ICP备112343423678e号-2 桂公网安备 123456789123456号</div>
+    </div>
+</div> 
+
+
+
+</body>
+</html>

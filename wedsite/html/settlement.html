@@ -1,0 +1,828 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>结算页</title>
+<link rel="stylesheet" href="../css/bootstrap.css" type="text/css">
+<link rel="stylesheet" href="../css/bootstrap-theme.css" type="text/css">
+<link rel="stylesheet" href="../css/no-responsive.css" type="text/css">
+<link rel="stylesheet" href="../css/index.css" type="text/css">
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/index.js"></script>
+<script src="../js/scroll.js"></script>
+</head>
+
+
+<style>
+	.cartContent tbody tr td { height: 60px;}
+	.settlementContent .consignee .title h1 { cursor: pointer;}
+	.settlementContent .consignee .title .icon{ display:inline-block; height:6px; overflow:hidden; position:relative; top:-1px; left:5px;}
+	.settlementContent .consignee .title .icon i { font-size:26px; line-height:0px; color: #0080ff;}
+
+</style>
+
+<body>
+
+<div class="topNav">
+	<div class="container">
+    	<div class="row">
+        	<img src="../images/text.png" class="img-responsive">
+        </div>
+    </div>
+</div>
+<div class="topBar">
+	<div class="container">
+   		<ul class="nav navbar-nav navbar-right">
+            <li class="current"><a href="loginPage.html">你好，请登录</a></li>
+            <li><a href="registered.html">免费注册</a></li>
+            <li><a href="">注销</a></li>
+            <li><a href="myOrder.html" target="_blank">我的订单</a></li>
+            <li><a href="shangJiaRuZhu.html">卖家中心</a></li>
+            <li class="service">
+            	<a>客户服务<div class="icon"><i>◇</i></div></a>
+                <div class="itemBox">
+                	<ul class="item">
+                        <li><a href="helpMianFeiZhuCe.html" target="_blank">免费注册</a></li>
+                        <li><a href="helpGouWuLiuCheng.html" target="_blank">购物流程</a></li>
+                        <li><a href="helpZhaoHuiMiMa.html" target="_blank">找回密码</a></li>
+                        <li><a href="helpZhiFuFangShi.html" target="_blank">支付方式</a></li>
+                		<li><a href="helpZhiFuLiuCheng.html" target="_blank">支付流程</a></li>
+                        <li><a href="helpKuaiDiYunShu.html" target="_blank">快递运输</a></li>
+                		<li><a href="helpYanHuoJuShou.html" target="_blank">验货与拒收政策</a></li>
+                        <li><a href="helpFanXiuTuiHuan.html" target="_blank">返修退换货</a></li>
+                        <li><a href="helpQuXiaoDingDan.html" target="_blank">取消订单</a></li>
+                        <li><a href="helpLianXiWoMen.html" target="_blank">联系我们</a></li>
+                        <div class="clearfix"></div>
+                    </ul>	
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="logoBox">
+	<div class="container">
+    	<div class="row">
+        	<div class="col-md-3 col-lg-3 col-xs-3 logo"><a href="index.html"><img src="../images/LOGO.png" class="img-responsive"></a></div>
+        	<div class="col-md-1 col-lg-1 col-xs-1 guNiang"><img src="../images/guNiang.png" class="img-responsive"></div>
+        	<div class="col-md-6 col-lg-6 col-xs-6 search">
+            	<form action="" class="navbar-form navbar-left">
+                    <div class="input-group">
+                    	<i class="glyphicon glyphicon-search searchIcon"></i>
+                        <input type="text" placeholder="搜索关键词" class="form-control">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default but">搜索</button>
+                        </span>
+                    </div>
+                </form>
+                <ul class="nav navbar-nav navbar-left searchNav">
+                    <li><a href="">海关拍卖</a></li>
+                	<li><a href="">大闸蟹</a></li>
+                	<li><a href="">2件199</a></li>
+                	<li><a href="">团购9.9</a></li>
+                </ul>
+			</div>
+        	<div class="col-md-2 col-lg-2 col-xs-2 qrCod"><label>名优特产<br>想吃就买</label><img src="../images/qrCod.png"></div>
+        </div>
+    </div>
+</div>
+<div class="navItemsBox">
+	<div class="container">
+        <ul class="navItems">
+            <li class="active">
+            	<h1>全部商品分类</h1>
+            	<ul class="allClassify">
+            		<li class="mainNav">
+                    	<h1>全部商品</h1>
+                        <div class="dumascroll pop">
+                        	<h2 class=""><a href="">全部商品标题</a></h2>
+                            <ul class="">
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <h2><a href="">全部商品标题</a></h2>
+                            <ul>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <li><a href="">全部商品</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                    </li>
+            		<li class="mainNav">
+                    	<h1>名优推荐</h1>
+                        <div class="dumascroll pop">
+                        	<h2><a href="">名优推荐标题</a></h2>
+                            <ul>
+                                <li><a href="">名优推荐</a></li>
+                                <li><a href="">名优推荐</a></li>
+                                <li><a href="">名优推荐</a></li>
+                                <li><a href="">名优推荐</a></li>
+                                <li><a href="">名优推荐</a></li>
+                                <li><a href="">名优推荐</a></li>
+                                <li><a href="">名优推荐</a></li>
+                                <li><a href="">名优推荐</a></li>
+                                <li><a href="">名优推荐</a></li>
+                                <li><a href="">名优推荐</a></li>
+                                <li><a href="">名优推荐</a></li>
+                                <li><a href="">名优推荐</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <h2><a href="">名优推荐标题</a></h2>
+                            <ul>
+                                <li><a href="">名优推荐</a></li>
+                                <li><a href="">名优推荐</a></li>
+                                <li><a href="">名优推荐</a></li>
+                                <li><a href="">名优推荐</a></li>
+                                <li><a href="">名优推荐</a></li>
+                                <li><a href="">名优推荐</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                    </li>
+            		<li class="mainNav">
+                    	<h1>新鲜水果</h1>
+                        <div class="dumascroll pop">
+                        	<h2><a href="">新鲜水果标题</a></h2>
+                            <ul>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <h2><a href="">新鲜水果标题</a></h2>
+                            <ul>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <li><a href="">新鲜水果</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                    </li>
+            		<li class="mainNav">
+                    	<h1>零食小吃</h1>
+                        <div class="dumascroll pop">
+                        	<h2><a href="">零食小吃标题</a></h2>
+                            <ul>
+                                <li><a href="">零食小吃</a></li>
+                                <li><a href="">零食小吃</a></li>
+                                <li><a href="">零食小吃</a></li>
+                                <li><a href="">零食小吃</a></li>
+                                <li><a href="">零食小吃</a></li>
+                                <li><a href="">零食小吃</a></li>
+                                <li><a href="">零食小吃</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <h2><a href="">零食小吃标题</a></h2>
+                            <ul>
+                                <li><a href="">零食小吃</a></li>
+                                <li><a href="">零食小吃</a></li>
+                                <li><a href="">零食小吃</a></li>
+                                <li><a href="">零食小吃</a></li>
+                                <li><a href="">零食小吃</a></li>
+                                <li><a href="">零食小吃</a></li>
+                                <li><a href="">零食小吃</a></li>
+                                <li><a href="">零食小吃</a></li>
+                                <li><a href="">零食小吃</a></li>
+                                <li><a href="">零食小吃</a></li>
+                                <li><a href="">零食小吃</a></li>
+                                <li><a href="">零食小吃</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                    </a></li>
+            		<li class="mainNav">
+                    	<h1>名茶名饮</h1>
+                        <div class="dumascroll pop">
+                        	<h2><a href="">名茶名饮标题</a></h2>
+                            <ul>
+                                <li><a href="">名茶名饮</a></li>
+                                <li><a href="">名茶名饮</a></li>
+                                <li><a href="">名茶名饮</a></li>
+                                <li><a href="">名茶名饮</a></li>
+                                <li><a href="">名茶名饮</a></li>
+                                <li><a href="">名茶名饮</a></li>
+                                <li><a href="">名茶名饮</a></li>
+                                <li><a href="">名茶名饮</a></li>
+                                <li><a href="">名茶名饮</a></li>
+                                <li><a href="">名茶名饮</a></li>
+                                <li><a href="">名茶名饮</a></li>
+                                <li><a href="">名茶名饮</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <h2><a href="">名茶名饮标题</a></h2>
+                            <ul>
+                                <li><a href="">名茶名饮</a></li>
+                                <li><a href="">名茶名饮</a></li>
+                                <li><a href="">名茶名饮</a></li>
+                                <li><a href="">名茶名饮</a></li>
+                                <li><a href="">名茶名饮</a></li>
+                                <li><a href="">名茶名饮</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                    </li>
+            		<li class="mainNav">
+                    	<h1>干货调料</h1>
+                        <div class="dumascroll pop">
+                        	<h2><a href="">干货调料标题</a></h2>
+                            <ul>
+                                <li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <h2><a href="">干货调料标题</a></h2>
+                            <ul>
+                                <li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="dumascroll pop">
+                        	<h2><a href="">干货调料标题</a></h2>
+                            <ul>
+                                <li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <h2><a href="">标题分类标题分类标题分类</a></h2>
+                            <ul>
+                            	<li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <li><a href="">干货调料</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                    </li>
+            		<li class="mainNav">
+                    	<h1>工艺品类</h1>
+                        <div class="dumascroll pop">
+                        	<h2><a href="">工艺品类标题</a></h2>
+                            <ul>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <h2><a href="">工艺品类标题</a></h2>
+                            <ul>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <h2><a href="">工艺品类标题</a></h2>
+                            <ul>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                        	<h2><a href="">工艺品类标题</a></h2>
+                            <ul>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <h2><a href="">工艺品类标题</a></h2>
+                            <ul>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <li><a href="">工艺品类</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                    </li>
+            		<li class="mainNav">
+                    	<h1>农产生鲜</h1>
+                        <div class="dumascroll pop">
+                        	<h2><a href="">标题分类</a></h2>
+                            <ul>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <h2><a href="">标题分类标题分类标题分类</a></h2>
+                            <ul>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <li><a href="">农产生鲜</a></li>
+                                <div class="clearfix"></div>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                    </li>
+            	</ul>
+            </li>
+            <li><a href="index.html"><h1>首页</h1></a></li>
+           	<li><a href="highGoodsArea.html"><h1>渔牧精品区</h1></a></li>
+            <div class="clearfix"></div>
+        </ul>
+    </div>
+</div>
+<div class="container cartContentBox">
+    <div class="cartPromptBox">
+    	<div class="cartPrompt">
+			<ul class="bright">
+                <li class="long"></li>
+                <li class="round">1</li>
+                <li class="Prompt">1 我的购物车</li>
+            </ul>
+            <ul class="bright">
+                <li class="long"></li>
+                <li class="round">2</li>
+                <li class="Prompt">2 填写核对订单信息</li>
+            </ul>
+            <ul>
+                <li class="long"></li>
+                <li class="round">3</li>
+                <li class="Prompt">3 成功提交订单</li>
+            </ul>
+            <div class="clearfix"></div>
+	
+        </div>
+    </div>
+	<div class="settlementContent">
+    	<h1>填写并核实订单信息</h1>
+        <div class="orderInformationBox">
+        	<div class="consignee">
+            	<div class="title">
+            		<h1>收货人信息</h1>
+            		<h2>新增收货地址</h2>
+                    <div class="clearfix"></div>
+            	</div>
+            	<ul>
+            		<li><input type="radio"><label>收货人姓名 广西 南宁 青秀区 暂无 12345678901</label></li>
+                    <div class="clearfix"></div>
+            	</ul>
+            </div>
+            <div class="consignee">
+            	<div class="title">
+            		<h1>支付方式</h1>
+                    <div class="clearfix"></div>
+            	</div>
+            	<ul>
+            		<li><input type="radio" name="pay"><label>微信支付</label></li>
+                    <li><input type="radio" name="pay"><label>支付宝</label></li>
+                    <div class="clearfix"></div>
+            	</ul>
+            </div>
+            <div class="consignee">
+            	<div class="title">
+            		<h1>配送方式</h1>
+                    <div class="clearfix"></div>
+            	</div>
+            	<ul>
+            		<li><input type="radio" name="courier"><label>快递运输</label></li>
+                    <li><input type="radio" name="courier"><label>上门自提</label></li>
+                    <div class="clearfix"></div>
+            	</ul>
+            </div>
+            <div class="cartContent consignee">
+            	<div class="title">
+            		<h1>商品清单</h1>
+                    <h2><a href="cart.html">返回购物车</a></h2>
+                    <div class="clearfix"></div>
+            	</div>
+            	<table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th style="width:42%;">商品</th>
+                            <th style="width:16%;">单价（元）</th>
+                            <th style="width:16%;">数量</th>
+                            <th style="width:12%;">小计（元）</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="goods">
+                                <a href="">
+                                    <img src="../images/pro01.png" class="img-responsive"/>
+                                    <div class="span">咔琦娜 2016春秋新绵羊皮真皮皮衣外套 夹克机车皮衣短款 春秋新品女士小外套/翻领黑色/ M码</div>
+                                    <div class="clearfix"></div>
+                                </a>
+                            </td>
+                            <td class="price">799.00</td>
+                            <td class="price">1</td>
+                            <td class="price">799.00</td>
+                        </tr>
+                        <tr>
+                            <td class="goods">
+                                <a href="">
+                                    <img src="../images/pro01.png" class="img-responsive"/>
+                                    <div class="span">咔琦娜 2016春秋新绵羊皮真皮皮衣外套 夹克机车皮衣短款 春秋新品女士小外套/翻领黑色/ M码</div>
+                                    <div class="clearfix"></div>
+                                </a>
+                            </td>
+                            <td class="price">799.00</td>
+                            <td class="price">1</td>
+                            <td class="price">799.00</td>
+                        </tr>
+                        <tr>
+                            <td class="goods">
+                                <a href="">
+                                    <img src="../images/pro01.png" class="img-responsive"/>
+                                    <div class="span">咔琦娜 2016春秋新绵羊皮真皮皮衣外套 夹克机车皮衣短款</div>
+                                    <div class="clearfix"></div>
+                                </a>
+                            </td>
+                            <td class="price">799.00</td>
+                            <td class="price">1</td>
+                            <td class="price">799.00</td>
+                        </tr>
+                    </tbody>
+             </table>
+
+
+               	<!-- 新增HTML开始  -->
+	            	<div class="title">
+	            		<h1 style=" color: #0080ff;">使用代金券抵用<div class="icon title-btn"><i>◇</i></div></h1>
+	                    <div class="clearfix"></div>
+	            	</div>
+	            	<table class="table table-responsive table-btn">
+	                    <thead>
+	                        <tr>
+	                        	  <th style="width: 5%;"></th>
+	                            <th style="width: 25%;">代金券</th>
+	                            <th style="width:15%;">数量</th>
+	                            <th style="width:15%;">金额</th>
+	                            <th style="width: 25%;"></th>
+	                        </tr>
+	                    </thead>
+	                    <tbody>
+	                        <tr>
+	                            <td><input type="radio" name="price" style="width: 16px; height: 16px;" /></td>
+	                            <td class="price">799.00</td>
+	                            <td class="price">1</td>
+	                            <td class="price">799.00</td>
+	                            <td></td>
+	                        </tr>
+	                        <tr>
+	                            <td><input type="radio" name="price" style="width: 16px; height: 16px;" /></td>
+	                            <td class="price">799.00</td>
+	                            <td class="price">1</td>
+	                            <td class="price">799.00</td>
+	                            <td></td>
+	                        </tr>
+	                        <tr>
+	                            <td><input type="radio" name="price" style="width: 16px; height: 16px;" /></td>
+	                            <td class="price">799.00</td>
+	                            <td class="price">1</td>
+	                            <td class="price">799.00</td>
+	                            <td></td>
+	                        </tr>
+	                    </tbody>
+	                </table>
+	                <!-- 新增HTML结束  -->
+
+
+                <ul class="settlementAmount">
+                	<li>
+                    	<label>2</label>件商品，总商品金额：￥799.00
+                    </li>
+                	<li>运费总额：￥0.00</li>
+                    <li class="sumPayable">应付总额：<label>￥799.00</label></li>
+                    <li class="but"><a href="submitSucce.html">提交订单</a></li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+        </div> 
+	</div>    
+</div>	
+
+<div class="setPop">
+	<div class="pop">
+		<div class="title">
+        	<h1>新增收货人信息</h1>
+            <i class="glyphicon glyphicon-remove setPopClose"></i>
+            <div class="clearfix"></div>
+        </div>
+        <ul>
+        	<li>
+            	<label><span>*</span>收货人：</label>
+                <input type="text">	
+            </li>
+            <li>
+            	<label><span>*</span>联系电话：</label>
+                <input type="text">	
+            </li>
+        	<li>
+            	<label><span>*</span>所在地区：</label>
+                <select>
+                	<option>省</option>
+                    <option>省</option>
+                    <option>省</option>
+                </select>
+                <select>
+                	<option>市</option>
+                    <option>市</option>
+                    <option>市</option>
+                </select>
+                <select>
+                	<option>区</option>
+                    <option>区</option>
+                    <option>区</option>
+                </select>
+            </li>
+        	<li>
+            	<label><span>*</span>详细地址：</label>
+                <input type="text">
+            </li>
+        </ul>
+        <button class="setPopClose">保存收货人信息</button>
+	</div>
+</div>
+
+<script>
+/* 弹窗打开 */
+$(".orderInformationBox .title h2").click(function(){
+	$(".setPop").show();
+})
+/* 弹窗关闭 */
+$(".setPopClose").click(function(){
+	$(".setPop").hide();
+})
+</script>
+<div class="footerBox">
+	<div class="container">
+    	<div class="row footer">
+            <div class="col-md-2 col-lg-2 col-xs-2">
+                <ul>
+                    <h1>新手上路</h1>
+                    <li><a href="helpMianFeiZhuCe.html" target="_blank">免费注册</a></li>
+                    <li><a href="helpGouWuLiuCheng.html" target="_blank">购物流程</a></li>
+                    <li><a href="helpZhaoHuiMiMa.html" target="_blank">找回密码</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xs-2">
+                <ul>
+                    <h1>付款方式</h1>
+                    <li><a href="helpZhiFuFangShi.html" target="_blank">支付方式</a></li>
+                	<li><a href="helpZhiFuLiuCheng.html" target="_blank">支付流程</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xs-2">
+                <ul>
+                    <h1>配送信息</h1>
+                    <li><a href="helpKuaiDiYunShu.html" target="_blank">快递运输</a></li>
+                	<li><a href="helpYanHuoJuShou.html" target="_blank">验货与拒收政策</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xs-2">
+                <ul>
+                    <h1>售后服务</h1>
+                    <li><a href="helpFanXiuTuiHuan.html" target="_blank">返修退换货</a></li>
+                    <li><a href="helpQuXiaoDingDan.html" target="_blank">取消订单</a></li>
+                    <li><a href="helpLianXiWoMen.html" target="_blank">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-lg-3 col-xs-3 imgBox">
+            	<div class="img">
+                	<h1>400-123-0771</h1>
+                	<img src="../images/contact.png">
+                </div>
+            </div>
+        </div>
+        <div class="footerLink">
+        </div>
+        <div class="ICP">Copyright©2017 广西第一特产网 All Rights Reserved 广西第一特产网版权所有<br>
+桂ICP备112343423678e号-2 桂公网安备 123456789123456号</div>
+    </div>
+</div> 
+
+<script>
+	$(".table-btn").hide()
+	var x = 1
+	$(".settlementContent .consignee .title h1").click(function(){
+		if(x){
+			$('.settlementContent .consignee .title .icon i').css('line-height','12px');
+			$(".table-btn").show()
+			x=0
+		}else{
+			$(".table-btn").hide()
+			$('.settlementContent .consignee .title .icon i').css('line-height','0');
+			x=1;
+		}
+	})
+
+</script>
+
+</body>
+</html>
